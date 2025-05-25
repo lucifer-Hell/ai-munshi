@@ -1,0 +1,11 @@
+supplier_id,supplier_name,category,region,amount,invoice_date,payment_status
+101,Acme Corp,Electronics,North,12500,15/01/23,Paid
+102,TechNova,Office Supplies,East,3500,20/01/23,Pending
+103,BuildSmart,Construction,West,18000,05/02/23,Paid
+104,Foodies Inc,Groceries,South,4200,12/02/23,Paid
+105,Acme Corp,Electronics,North,9800,01/03/23,Pending
+106,GreenLeaf,Groceries,West,3900,10/03/23,Paid
+107,StructSure,Construction,East,15200,15/03/23,Paid
+108,TechNova,Office Supplies,North,2700,01/04/23,Pending
+109,BuildSmart,Construction,South,21300,05/04/23,Paid
+110,GreenLeaf,Groceries,North,3100,15/04/23,Pending
