@@ -1,0 +1,301 @@
+query_type,query,col_1,col_2,df_command
+Aggregation,Get the number of quantity values grouped by channel.,channel,quantity,df.groupby('channel')['quantity'].agg('count')
+Aggregation,Compute the minimum cost per region.,region,cost,df.groupby('region')['cost'].agg('min')
+Aggregation,Get the average cost grouped by month.,month,cost,df.groupby('month')['cost'].agg('mean')
+Aggregation,Give the median month for each month.,month,month,df.groupby('month')['month'].agg('median')
+Aggregation,Find standard deviation of profit grouped by store_id.,store_id,profit,df.groupby('store_id')['profit'].agg('std')
+Aggregation,Calculate the total expenses for each channel.,channel,expenses,df.groupby('channel')['expenses'].agg('sum')
+Aggregation,Find the maximum cost in every department.,department,cost,df.groupby('department')['cost'].agg('max')
+Aggregation,Compute the minimum cost per category.,category,cost,df.groupby('category')['cost'].agg('min')
+Aggregation,Show the sum of profit across city.,city,profit,df.groupby('city')['profit'].agg('sum')
+Aggregation,Find the maximum cost in every channel.,channel,cost,df.groupby('channel')['cost'].agg('max')
+Aggregation,Calculate the total tax for each city.,city,tax,df.groupby('city')['tax'].agg('sum')
+Aggregation,List the count of sales for each department.,department,sales,df.groupby('department')['sales'].agg('count')
+Aggregation,Give the median expenses for each customer_type.,customer_type,expenses,df.groupby('customer_type')['expenses'].agg('median')
+Aggregation,Calculate the total units_sold for each category.,category,units_sold,df.groupby('category')['units_sold'].agg('sum')
+Aggregation,Get the average store_id grouped by store_id.,store_id,store_id,df.groupby('store_id')['store_id'].agg('mean')
+Aggregation,Get the average cost grouped by product.,product,cost,df.groupby('product')['cost'].agg('mean')
+Aggregation,Find the maximum quantity in every channel.,channel,quantity,df.groupby('channel')['quantity'].agg('max')
+Aggregation,Find the maximum expenses in every channel.,channel,expenses,df.groupby('channel')['expenses'].agg('max')
+Aggregation,Get the number of order_value values grouped by customer_type.,customer_type,order_value,df.groupby('customer_type')['order_value'].agg('count')
+Aggregation,Show how many units_sold entries exist per month.,month,units_sold,df.groupby('month')['units_sold'].agg('count')
+Aggregation,Find standard deviation of discount grouped by store_id.,store_id,discount,df.groupby('store_id')['discount'].agg('std')
+Aggregation,Show how many quantity entries exist per department.,department,quantity,df.groupby('department')['quantity'].agg('count')
+Aggregation,Show the sum of units_sold across department.,department,units_sold,df.groupby('department')['units_sold'].agg('sum')
+Aggregation,Give the median sales for each category.,category,sales,df.groupby('category')['sales'].agg('median')
+Aggregation,Show how many units_sold entries exist per category.,category,units_sold,df.groupby('category')['units_sold'].agg('count')
+Aggregation,Show the sum of sales across department.,department,sales,df.groupby('department')['sales'].agg('sum')
+Aggregation,Calculate the total units_sold for each department.,department,units_sold,df.groupby('department')['units_sold'].agg('sum')
+Aggregation,Calculate the total discount for each department.,department,discount,df.groupby('department')['discount'].agg('sum')
+Aggregation,Show how many units_sold entries exist per month.,month,units_sold,df.groupby('month')['units_sold'].agg('count')
+Aggregation,List the count of units_sold for each channel.,channel,units_sold,df.groupby('channel')['units_sold'].agg('count')
+Aggregation,Find the maximum tax in every category.,category,tax,df.groupby('category')['tax'].agg('max')
+Aggregation,List the count of units_sold for each store_id.,store_id,units_sold,df.groupby('store_id')['units_sold'].agg('count')
+Aggregation,Find standard deviation of units_sold grouped by department.,department,units_sold,df.groupby('department')['units_sold'].agg('std')
+Aggregation,Get the average order_value grouped by city.,city,order_value,df.groupby('city')['order_value'].agg('mean')
+Aggregation,Find standard deviation of order_value grouped by store_id.,store_id,order_value,df.groupby('store_id')['order_value'].agg('std')
+Aggregation,Calculate the total region for each region.,region,region,df.groupby('region')['region'].agg('sum')
+Aggregation,Find standard deviation of discount grouped by department.,department,discount,df.groupby('department')['discount'].agg('std')
+Aggregation,Show the sum of units_sold across customer_type.,customer_type,units_sold,df.groupby('customer_type')['units_sold'].agg('sum')
+Aggregation,Show how many quantity entries exist per product.,product,quantity,df.groupby('product')['quantity'].agg('count')
+Aggregation,Find standard deviation of profit grouped by month.,month,profit,df.groupby('month')['profit'].agg('std')
+Aggregation,List the count of units_sold for each department.,department,units_sold,df.groupby('department')['units_sold'].agg('count')
+Aggregation,List the count of cost for each department.,department,cost,df.groupby('department')['cost'].agg('count')
+Aggregation,Calculate the total cost for each region.,region,cost,df.groupby('region')['cost'].agg('sum')
+Aggregation,Get the average units_sold grouped by product.,product,units_sold,df.groupby('product')['units_sold'].agg('mean')
+Aggregation,Find standard deviation of quantity grouped by store_id.,store_id,quantity,df.groupby('store_id')['quantity'].agg('std')
+Aggregation,Show the sum of order_value across region.,region,order_value,df.groupby('region')['order_value'].agg('sum')
+Aggregation,Find the maximum order_value in every region.,region,order_value,df.groupby('region')['order_value'].agg('max')
+Aggregation,Find standard deviation of expenses grouped by store_id.,store_id,expenses,df.groupby('store_id')['expenses'].agg('std')
+Aggregation,Compute the minimum order_value per channel.,channel,order_value,df.groupby('channel')['order_value'].agg('min')
+Aggregation,List the count of profit for each customer_type.,customer_type,profit,df.groupby('customer_type')['profit'].agg('count')
+Aggregation,Compute the minimum units_sold per region.,region,units_sold,df.groupby('region')['units_sold'].agg('min')
+Aggregation,Get the number of cost values grouped by region.,region,cost,df.groupby('region')['cost'].agg('count')
+Aggregation,Give the median sales for each region.,region,sales,df.groupby('region')['sales'].agg('median')
+Aggregation,Get the number of quantity values grouped by channel.,channel,quantity,df.groupby('channel')['quantity'].agg('count')
+Aggregation,Show how many profit entries exist per region.,region,profit,df.groupby('region')['profit'].agg('count')
+Aggregation,Show how many product entries exist per product.,product,product,df.groupby('product')['product'].agg('count')
+Aggregation,Get the average tax grouped by department.,department,tax,df.groupby('department')['tax'].agg('mean')
+Aggregation,Show the sum of order_value across department.,department,order_value,df.groupby('department')['order_value'].agg('sum')
+Aggregation,Get the number of units_sold values grouped by category.,category,units_sold,df.groupby('category')['units_sold'].agg('count')
+Aggregation,Get the number of sales values grouped by category.,category,sales,df.groupby('category')['sales'].agg('count')
+Aggregation,Get the average order_value grouped by category.,category,order_value,df.groupby('category')['order_value'].agg('mean')
+Aggregation,Get the number of cost values grouped by city.,city,cost,df.groupby('city')['cost'].agg('count')
+Aggregation,Compute the minimum units_sold per city.,city,units_sold,df.groupby('city')['units_sold'].agg('min')
+Aggregation,Show the sum of expenses across employee.,employee,expenses,df.groupby('employee')['expenses'].agg('sum')
+Aggregation,Find the maximum expenses in every store_id.,store_id,expenses,df.groupby('store_id')['expenses'].agg('max')
+Aggregation,Give the median region for each region.,region,region,df.groupby('region')['region'].agg('median')
+Aggregation,List the count of tax for each category.,category,tax,df.groupby('category')['tax'].agg('count')
+Aggregation,Get the average channel grouped by channel.,channel,channel,df.groupby('channel')['channel'].agg('mean')
+Aggregation,Show the sum of cost across month.,month,cost,df.groupby('month')['cost'].agg('sum')
+Aggregation,Find the maximum discount in every department.,department,discount,df.groupby('department')['discount'].agg('max')
+Aggregation,Show the sum of discount across month.,month,discount,df.groupby('month')['discount'].agg('sum')
+Aggregation,Find the maximum quantity in every channel.,channel,quantity,df.groupby('channel')['quantity'].agg('max')
+Aggregation,Compute the minimum tax per channel.,channel,tax,df.groupby('channel')['tax'].agg('min')
+Aggregation,Calculate the total cost for each month.,month,cost,df.groupby('month')['cost'].agg('sum')
+Aggregation,Get the average profit grouped by month.,month,profit,df.groupby('month')['profit'].agg('mean')
+Aggregation,Get the average channel grouped by channel.,channel,channel,df.groupby('channel')['channel'].agg('mean')
+Aggregation,Find the maximum expenses in every month.,month,expenses,df.groupby('month')['expenses'].agg('max')
+Aggregation,Get the number of units_sold values grouped by city.,city,units_sold,df.groupby('city')['units_sold'].agg('count')
+Aggregation,Show the sum of expenses across channel.,channel,expenses,df.groupby('channel')['expenses'].agg('sum')
+Aggregation,List the count of expenses for each region.,region,expenses,df.groupby('region')['expenses'].agg('count')
+Aggregation,Get the average order_value grouped by month.,month,order_value,df.groupby('month')['order_value'].agg('mean')
+Aggregation,Calculate the total sales for each city.,city,sales,df.groupby('city')['sales'].agg('sum')
+Aggregation,Find the maximum expenses in every product.,product,expenses,df.groupby('product')['expenses'].agg('max')
+Aggregation,List the count of cost for each employee.,employee,cost,df.groupby('employee')['cost'].agg('count')
+Aggregation,Show how many sales entries exist per department.,department,sales,df.groupby('department')['sales'].agg('count')
+Aggregation,Get the average profit grouped by channel.,channel,profit,df.groupby('channel')['profit'].agg('mean')
+Aggregation,Calculate the total discount for each category.,category,discount,df.groupby('category')['discount'].agg('sum')
+Aggregation,Show how many profit entries exist per employee.,employee,profit,df.groupby('employee')['profit'].agg('count')
+Aggregation,Find the maximum sales in every month.,month,sales,df.groupby('month')['sales'].agg('max')
+Aggregation,Give the median sales for each city.,city,sales,df.groupby('city')['sales'].agg('median')
+Aggregation,Show the sum of units_sold across department.,department,units_sold,df.groupby('department')['units_sold'].agg('sum')
+Aggregation,Give the median cost for each employee.,employee,cost,df.groupby('employee')['cost'].agg('median')
+Aggregation,Get the number of profit values grouped by customer_type.,customer_type,profit,df.groupby('customer_type')['profit'].agg('count')
+Aggregation,Find the maximum profit in every employee.,employee,profit,df.groupby('employee')['profit'].agg('max')
+Aggregation,Calculate the total profit for each city.,city,profit,df.groupby('city')['profit'].agg('sum')
+Aggregation,Find standard deviation of units_sold grouped by month.,month,units_sold,df.groupby('month')['units_sold'].agg('std')
+Aggregation,Find the maximum employee in every employee.,employee,employee,df.groupby('employee')['employee'].agg('max')
+Aggregation,Calculate the total quantity for each customer_type.,customer_type,quantity,df.groupby('customer_type')['quantity'].agg('sum')
+Aggregation,Show the sum of quantity across city.,city,quantity,df.groupby('city')['quantity'].agg('sum')
+Aggregation,Compute the minimum units_sold per customer_type.,customer_type,units_sold,df.groupby('customer_type')['units_sold'].agg('min')
+Sorting & Ranking,Show customers in increasing order of revenue.,customers,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Display employees in order of decreasing units_sold.,employees,units_sold,"df.sort_values(by='units_sold', ascending=False).head(5)"
+Sorting & Ranking,Get the highest sales values for each employees.,employees,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,Find top 3 stores with highest rating.,stores,rating,"df.sort_values(by='rating', ascending=False).head(3)"
+Sorting & Ranking,Get the highest sales values for each departments.,departments,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,Find top 3 departments with highest units_sold.,departments,units_sold,"df.sort_values(by='units_sold', ascending=False).head(3)"
+Sorting & Ranking,List the lowest revenue values grouped by stores.,stores,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Show customers in increasing order of profit.,customers,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,Rank departments by units_sold.,departments,units_sold,df['units_sold_rank'] = df['units_sold'].rank(ascending=False)
+Sorting & Ranking,Get the highest profit values for each stores.,stores,profit,"df.sort_values(by='profit', ascending=False).head(5)"
+Sorting & Ranking,Rank employees by expenses.,employees,expenses,df['expenses_rank'] = df['expenses'].rank(ascending=False)
+Sorting & Ranking,Show customers sorted by profit ascending.,customers,profit,"df.sort_values(by='profit', ascending=True)"
+Sorting & Ranking,Show stores sorted by sales ascending.,stores,sales,"df.sort_values(by='sales', ascending=True)"
+Sorting & Ranking,Rank stores by expenses.,stores,expenses,df['expenses_rank'] = df['expenses'].rank(ascending=False)
+Sorting & Ranking,Display stores in order of decreasing expenses.,stores,expenses,"df.sort_values(by='expenses', ascending=False).head(5)"
+Sorting & Ranking,Get bottom 10 stores based on sales.,stores,sales,"df.sort_values(by='sales', ascending=True).head(10)"
+Sorting & Ranking,Get bottom 10 customers based on units_sold.,customers,units_sold,"df.sort_values(by='units_sold', ascending=True).head(10)"
+Sorting & Ranking,Rank products by profit.,products,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
+Sorting & Ranking,Sort customers by profit in descending order.,customers,profit,"df.sort_values(by='profit', ascending=False)"
+Sorting & Ranking,List top 5 employees by profit.,employees,profit,"df.sort_values(by='profit', ascending=False).head(5)"
+Sorting & Ranking,Get bottom 10 products based on profit.,products,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,Find top 3 departments with highest units_sold.,departments,units_sold,"df.sort_values(by='units_sold', ascending=False).head(3)"
+Sorting & Ranking,Display products in order of decreasing rating.,products,rating,"df.sort_values(by='rating', ascending=False).head(5)"
+Sorting & Ranking,Get the highest rating values for each stores.,stores,rating,"df.sort_values(by='rating', ascending=False).head(5)"
+Sorting & Ranking,Show customers in increasing order of sales.,customers,sales,"df.sort_values(by='sales', ascending=True).head(10)"
+Sorting & Ranking,List the lowest revenue values grouped by products.,products,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Find top 3 employees with highest expenses.,employees,expenses,"df.sort_values(by='expenses', ascending=False).head(3)"
+Sorting & Ranking,Sort stores by sales in descending order.,stores,sales,"df.sort_values(by='sales', ascending=False)"
+Sorting & Ranking,Sort stores by revenue in descending order.,stores,revenue,"df.sort_values(by='revenue', ascending=False)"
+Sorting & Ranking,Find top 3 products with highest sales.,products,sales,"df.sort_values(by='sales', ascending=False).head(3)"
+Sorting & Ranking,Rank products by rating.,products,rating,df['rating_rank'] = df['rating'].rank(ascending=False)
+Sorting & Ranking,Rank departments by profit.,departments,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
+Sorting & Ranking,Get bottom 10 employees based on units_sold.,employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(10)"
+Sorting & Ranking,Display customers in order of decreasing expenses.,customers,expenses,"df.sort_values(by='expenses', ascending=False).head(5)"
+Sorting & Ranking,Get bottom 10 employees based on revenue.,employees,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Sort customers by profit in descending order.,customers,profit,"df.sort_values(by='profit', ascending=False)"
+Sorting & Ranking,List the lowest profit values grouped by employees.,employees,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,List the lowest revenue values grouped by employees.,employees,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Show departments in increasing order of profit.,departments,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,Find top 3 products with highest profit.,products,profit,"df.sort_values(by='profit', ascending=False).head(3)"
+Sorting & Ranking,Find top 3 customers with highest revenue.,customers,revenue,"df.sort_values(by='revenue', ascending=False).head(3)"
+Sorting & Ranking,Sort stores by rating in descending order.,stores,rating,"df.sort_values(by='rating', ascending=False)"
+Sorting & Ranking,List the lowest expenses values grouped by departments.,departments,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Display departments in order of decreasing profit.,departments,profit,"df.sort_values(by='profit', ascending=False).head(5)"
+Sorting & Ranking,Find top 3 employees with highest profit.,employees,profit,"df.sort_values(by='profit', ascending=False).head(3)"
+Sorting & Ranking,Show products in increasing order of revenue.,products,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Display customers in order of decreasing rating.,customers,rating,"df.sort_values(by='rating', ascending=False).head(5)"
+Sorting & Ranking,List the lowest expenses values grouped by departments.,departments,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Find top 3 products with highest expenses.,products,expenses,"df.sort_values(by='expenses', ascending=False).head(3)"
+Sorting & Ranking,Display departments in order of decreasing sales.,departments,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,List the lowest units_sold values grouped by products.,products,units_sold,"df.sort_values(by='units_sold', ascending=True).head(10)"
+Sorting & Ranking,Show departments in increasing order of revenue.,departments,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,List the lowest revenue values grouped by departments.,departments,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Show customers sorted by rating ascending.,customers,rating,"df.sort_values(by='rating', ascending=True)"
+Sorting & Ranking,Get bottom 10 products based on expenses.,products,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,List top 5 departments by profit.,departments,profit,"df.sort_values(by='profit', ascending=False).head(5)"
+Sorting & Ranking,List top 5 customers by rating.,customers,rating,"df.sort_values(by='rating', ascending=False).head(5)"
+Sorting & Ranking,Get bottom 10 products based on rating.,products,rating,"df.sort_values(by='rating', ascending=True).head(10)"
+Sorting & Ranking,Rank stores by revenue.,stores,revenue,df['revenue_rank'] = df['revenue'].rank(ascending=False)
+Sorting & Ranking,Show employees sorted by units_sold ascending.,employees,units_sold,"df.sort_values(by='units_sold', ascending=True)"
+Sorting & Ranking,Rank customers by units_sold.,customers,units_sold,df['units_sold_rank'] = df['units_sold'].rank(ascending=False)
+Sorting & Ranking,Find top 3 employees with highest rating.,employees,rating,"df.sort_values(by='rating', ascending=False).head(3)"
+Sorting & Ranking,Show departments in increasing order of expenses.,departments,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Rank products by profit.,products,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
+Sorting & Ranking,Sort employees by revenue in descending order.,employees,revenue,"df.sort_values(by='revenue', ascending=False)"
+Sorting & Ranking,Display customers in order of decreasing rating.,customers,rating,"df.sort_values(by='rating', ascending=False).head(5)"
+Sorting & Ranking,Sort stores by sales in descending order.,stores,sales,"df.sort_values(by='sales', ascending=False)"
+Sorting & Ranking,Find top 3 customers with highest sales.,customers,sales,"df.sort_values(by='sales', ascending=False).head(3)"
+Sorting & Ranking,Show departments in increasing order of expenses.,departments,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Find top 3 customers with highest profit.,customers,profit,"df.sort_values(by='profit', ascending=False).head(3)"
+Sorting & Ranking,Rank products by expenses.,products,expenses,df['expenses_rank'] = df['expenses'].rank(ascending=False)
+Sorting & Ranking,Show stores sorted by sales ascending.,stores,sales,"df.sort_values(by='sales', ascending=True)"
+Sorting & Ranking,List the lowest rating values grouped by customers.,customers,rating,"df.sort_values(by='rating', ascending=True).head(10)"
+Sorting & Ranking,List the lowest expenses values grouped by employees.,employees,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Sort stores by expenses in descending order.,stores,expenses,"df.sort_values(by='expenses', ascending=False)"
+Sorting & Ranking,Find top 3 stores with highest sales.,stores,sales,"df.sort_values(by='sales', ascending=False).head(3)"
+Sorting & Ranking,Get bottom 10 products based on sales.,products,sales,"df.sort_values(by='sales', ascending=True).head(10)"
+Sorting & Ranking,Find top 2 stores with highest sales.,stores,sales,"df.sort_values(by='sales', ascending=False).head(2)"
+Sorting & Ranking,Sort employees by units_sold in descending order.,employees,units_sold,"df.sort_values(by='units_sold', ascending=False)"
+Sorting & Ranking,Get bottom 10 stores based on profit.,stores,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,Rank customers by profit.,customers,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
+Sorting & Ranking,List the lowest profit values grouped by employees.,employees,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,Sort stores by units_sold in descending order.,stores,units_sold,"df.sort_values(by='units_sold', ascending=False)"
+Sorting & Ranking,Display departments in order of decreasing sales.,departments,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,Rank employees by profit.,employees,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
+Sorting & Ranking,Show employees in increasing order of rating.,employees,rating,"df.sort_values(by='rating', ascending=True).head(10)"
+Sorting & Ranking,Sort departments by units_sold in descending order.,departments,units_sold,"df.sort_values(by='units_sold', ascending=False)"
+Sorting & Ranking,Rank products by profit.,products,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
+Sorting & Ranking,Find top 2 employees with highest sales.,employees,sales,"df.sort_values(by='sales', ascending=False).head(2)"
+Sorting & Ranking,Show products in increasing order of expenses.,products,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Show customers sorted by sales ascending.,customers,sales,"df.sort_values(by='sales', ascending=True)"
+Sorting & Ranking,List top 5 departments by revenue.,departments,revenue,"df.sort_values(by='revenue', ascending=False).head(5)"
+Sorting & Ranking,Get bottom 10 customers based on revenue.,customers,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Sort customers by revenue in descending order.,customers,revenue,"df.sort_values(by='revenue', ascending=False)"
+Sorting & Ranking,List the lowest revenue values grouped by employees.,employees,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Rank employees by units_sold.,employees,units_sold,df['units_sold_rank'] = df['units_sold'].rank(ascending=False)
+Sorting & Ranking,List top 5 departments by revenue.,departments,revenue,"df.sort_values(by='revenue', ascending=False).head(5)"
+Sorting & Ranking,Get bottom 10 customers based on rating.,customers,rating,"df.sort_values(by='rating', ascending=True).head(10)"
+Sorting & Ranking,Get bottom 10 products based on expenses.,products,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,List top 5 employees by sales.,employees,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Text/String Operations,Get rows where email field has the substring 'Manager'.,email,,"df[df['email'].str.contains('Manager', case=False, na=False)]"
+Text/String Operations,Find all values in city that end with 'com'.,city,,"df[df['city'].str.endswith('com', na=False)]"
+Text/String Operations,List all records where product_name includes 'tech'.,product_name,,"df[df['product_name'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,Get rows where customer_name field has the substring 'Service'.,customer_name,,"df[df['customer_name'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Find all values in category that end with 'Manager'.,category,,"df[df['category'].str.endswith('Manager', na=False)]"
+Text/String Operations,Filter rows where product_name contains 'Service' substring.,product_name,,"df[df['product_name'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Filter rows where customer_name contains 'Service' substring.,customer_name,,"df[df['customer_name'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,List all records where city includes 'tech'.,city,,"df[df['city'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,Filter rows where city contains 'Store' substring.,city,,"df[df['city'].str.contains('Store', case=False, na=False)]"
+Text/String Operations,Find category values that contain 'Pro' case-insensitively.,category,,"df[df['category'].str.contains('Pro', case=False, na=False)]"
+Text/String Operations,List records where customer_name begins with 'Inc'.,customer_name,,"df[df['customer_name'].str.startswith('Inc', na=False)]"
+Text/String Operations,List all records where department includes 'Manager'.,department,,"df[df['department'].str.contains('Manager', case=False, na=False)]"
+Text/String Operations,Get rows where category field has the substring 'sales'.,category,,"df[df['category'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,Get rows where department field has the substring 'Service'.,department,,"df[df['department'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Get rows where product_name field has the substring 'Inc'.,product_name,,"df[df['product_name'].str.contains('Inc', case=False, na=False)]"
+Text/String Operations,Find customer_name values that contain 'Manager' case-insensitively.,customer_name,,"df[df['customer_name'].str.contains('Manager', case=False, na=False)]"
+Text/String Operations,List all records where city includes 'Store'.,city,,"df[df['city'].str.contains('Store', case=False, na=False)]"
+Text/String Operations,Filter rows where email contains 'North' substring.,email,,"df[df['email'].str.contains('North', case=False, na=False)]"
+Text/String Operations,List records where city begins with 'Manager'.,city,,"df[df['city'].str.startswith('Manager', na=False)]"
+Text/String Operations,List records where city begins with 'com'.,city,,"df[df['city'].str.startswith('com', na=False)]"
+Text/String Operations,Get rows where city field has the substring 'tech'.,city,,"df[df['city'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,Find customer_name values that contain 'Inc' case-insensitively.,customer_name,,"df[df['customer_name'].str.contains('Inc', case=False, na=False)]"
+Text/String Operations,List all records where city includes 'Inc'.,city,,"df[df['city'].str.contains('Inc', case=False, na=False)]"
+Text/String Operations,List records where department begins with 'New'.,department,,"df[df['department'].str.startswith('New', na=False)]"
+Text/String Operations,List all records where customer_name includes 'Service'.,customer_name,,"df[df['customer_name'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Find department values that contain 'Store' case-insensitively.,department,,"df[df['department'].str.contains('Store', case=False, na=False)]"
+Text/String Operations,List records where category begins with 'tech'.,category,,"df[df['category'].str.startswith('tech', na=False)]"
+Text/String Operations,Get rows where customer_name starts with 'tech'.,customer_name,,"df[df['customer_name'].str.startswith('tech', na=False)]"
+Text/String Operations,List all records where city includes 'New'.,city,,"df[df['city'].str.contains('New', case=False, na=False)]"
+Text/String Operations,Find product_name values that contain 'North' case-insensitively.,product_name,,"df[df['product_name'].str.contains('North', case=False, na=False)]"
+Text/String Operations,Show entries where city ends with 'Pro'.,city,,"df[df['city'].str.endswith('Pro', na=False)]"
+Text/String Operations,Find all category that contain the word 'tech'.,category,,"df[df['category'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,Show entries where department ends with 'Service'.,department,,"df[df['department'].str.endswith('Service', na=False)]"
+Text/String Operations,Get rows where product_name starts with 'Store'.,product_name,,"df[df['product_name'].str.startswith('Store', na=False)]"
+Text/String Operations,Find email values that contain 'Service' case-insensitively.,email,,"df[df['email'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Get rows where city field has the substring 'New'.,city,,"df[df['city'].str.contains('New', case=False, na=False)]"
+Text/String Operations,Find all city that contain the word 'Service'.,city,,"df[df['city'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Get rows where product_name starts with 'Manager'.,product_name,,"df[df['product_name'].str.startswith('Manager', na=False)]"
+Text/String Operations,Get rows where product_name field has the substring 'Store'.,product_name,,"df[df['product_name'].str.contains('Store', case=False, na=False)]"
+Text/String Operations,Find all customer_name that contain the word 'New'.,customer_name,,"df[df['customer_name'].str.contains('New', case=False, na=False)]"
+Text/String Operations,Find all values in city that end with 'Inc'.,city,,"df[df['city'].str.endswith('Inc', na=False)]"
+Text/String Operations,List all records where product_name includes 'North'.,product_name,,"df[df['product_name'].str.contains('North', case=False, na=False)]"
+Text/String Operations,Find all entries with category matching 'Store' exactly.,category,,df[df['category'] == 'Store']
+Text/String Operations,Find all values in customer_name that end with 'North'.,customer_name,,"df[df['customer_name'].str.endswith('North', na=False)]"
+Text/String Operations,Find all entries with email matching 'Service' exactly.,email,,df[df['email'] == 'Service']
+Text/String Operations,Find category values that contain 'Manager' case-insensitively.,category,,"df[df['category'].str.contains('Manager', case=False, na=False)]"
+Text/String Operations,Find category values that contain 'Store' case-insensitively.,category,,"df[df['category'].str.contains('Store', case=False, na=False)]"
+Text/String Operations,Find all category that contain the word 'Inc'.,category,,"df[df['category'].str.contains('Inc', case=False, na=False)]"
+Text/String Operations,List all records where department includes 'sales'.,department,,"df[df['department'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,Find department values that contain 'Inc' case-insensitively.,department,,"df[df['department'].str.contains('Inc', case=False, na=False)]"
+Text/String Operations,Show entries where customer_name ends with 'New'.,customer_name,,"df[df['customer_name'].str.endswith('New', na=False)]"
+Text/String Operations,List records where product_name begins with 'New'.,product_name,,"df[df['product_name'].str.startswith('New', na=False)]"
+Text/String Operations,Find all email that contain the word 'Service'.,email,,"df[df['email'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Find all values in email that end with 'tech'.,email,,"df[df['email'].str.endswith('tech', na=False)]"
+Text/String Operations,Find all customer_name that contain the word 'tech'.,customer_name,,"df[df['customer_name'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,Find department values that contain 'Service' case-insensitively.,department,,"df[df['department'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Get rows where department starts with 'sales'.,department,,"df[df['department'].str.startswith('sales', na=False)]"
+Text/String Operations,Find department values that contain 'Store' case-insensitively.,department,,"df[df['department'].str.contains('Store', case=False, na=False)]"
+Text/String Operations,List all records where email includes 'Inc'.,email,,"df[df['email'].str.contains('Inc', case=False, na=False)]"
+Text/String Operations,List records where customer_name begins with 'New'.,customer_name,,"df[df['customer_name'].str.startswith('New', na=False)]"
+Text/String Operations,Find customer_name values that contain 'Inc' case-insensitively.,customer_name,,"df[df['customer_name'].str.contains('Inc', case=False, na=False)]"
+Text/String Operations,Find all customer_name that contain the word 'tech'.,customer_name,,"df[df['customer_name'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,Find all values in department that end with 'Store'.,department,,"df[df['department'].str.endswith('Store', na=False)]"
+Text/String Operations,Find email values that contain 'Inc' case-insensitively.,email,,"df[df['email'].str.contains('Inc', case=False, na=False)]"
+Text/String Operations,Get rows where department field has the substring 'tech'.,department,,"df[df['department'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,Find all entries with city matching 'North' exactly.,city,,df[df['city'] == 'North']
+Text/String Operations,List records where email begins with 'Service'.,email,,"df[df['email'].str.startswith('Service', na=False)]"
+Text/String Operations,Get rows where category starts with 'Pro'.,category,,"df[df['category'].str.startswith('Pro', na=False)]"
+Text/String Operations,Find all entries with department matching 'com' exactly.,department,,df[df['department'] == 'com']
+Text/String Operations,Find all values in city that end with 'Pro'.,city,,"df[df['city'].str.endswith('Pro', na=False)]"
+Text/String Operations,Get rows where customer_name starts with 'Store'.,customer_name,,"df[df['customer_name'].str.startswith('Store', na=False)]"
+Text/String Operations,Find all values in product_name that end with 'tech'.,product_name,,"df[df['product_name'].str.endswith('tech', na=False)]"
+Text/String Operations,Find all values in product_name that end with 'New'.,product_name,,"df[df['product_name'].str.endswith('New', na=False)]"
+Text/String Operations,Get rows where category field has the substring 'Service'.,category,,"df[df['category'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Find customer_name values that contain 'Store' case-insensitively.,customer_name,,"df[df['customer_name'].str.contains('Store', case=False, na=False)]"
+Text/String Operations,Find all entries with department matching 'Service' exactly.,department,,df[df['department'] == 'Service']
+Text/String Operations,Get rows where email starts with 'com'.,email,,"df[df['email'].str.startswith('com', na=False)]"
+Text/String Operations,Find all entries with city matching 'com' exactly.,city,,df[df['city'] == 'com']
+Text/String Operations,Get rows where customer_name starts with 'com'.,customer_name,,"df[df['customer_name'].str.startswith('com', na=False)]"
+Text/String Operations,Find all entries with department matching 'Service' exactly.,department,,df[df['department'] == 'Service']
+Text/String Operations,Find department values that contain 'Manager' case-insensitively.,department,,"df[df['department'].str.contains('Manager', case=False, na=False)]"
+Text/String Operations,List records where product_name begins with 'Service'.,product_name,,"df[df['product_name'].str.startswith('Service', na=False)]"
+Text/String Operations,Get rows where city starts with 'tech'.,city,,"df[df['city'].str.startswith('tech', na=False)]"
+Text/String Operations,Filter rows where product_name contains 'Manager' substring.,product_name,,"df[df['product_name'].str.contains('Manager', case=False, na=False)]"
+Text/String Operations,List records where product_name begins with 'North'.,product_name,,"df[df['product_name'].str.startswith('North', na=False)]"
+Text/String Operations,Get rows where email field has the substring 'Pro'.,email,,"df[df['email'].str.contains('Pro', case=False, na=False)]"
+Text/String Operations,List all records where category includes 'com'.,category,,"df[df['category'].str.contains('com', case=False, na=False)]"
+Text/String Operations,Find all values in email that end with 'Service'.,email,,"df[df['email'].str.endswith('Service', na=False)]"
+Text/String Operations,Find all customer_name that contain the word 'tech'.,customer_name,,"df[df['customer_name'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,List records where customer_name begins with 'tech'.,customer_name,,"df[df['customer_name'].str.startswith('tech', na=False)]"
+Text/String Operations,Get rows where department field has the substring 'Service'.,department,,"df[df['department'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Get rows where product_name starts with 'Store'.,product_name,,"df[df['product_name'].str.startswith('Store', na=False)]"
+Text/String Operations,List all records where department includes 'New'.,department,,"df[df['department'].str.contains('New', case=False, na=False)]"
+Text/String Operations,Find category values that contain 'Pro' case-insensitively.,category,,"df[df['category'].str.contains('Pro', case=False, na=False)]"
+Text/String Operations,List records where email begins with 'Inc'.,email,,"df[df['email'].str.startswith('Inc', na=False)]"
+Text/String Operations,List all records where product_name includes 'Service'.,product_name,,"df[df['product_name'].str.contains('Service', case=False, na=False)]"
+Text/String Operations,Get rows where department starts with 'New'.,department,,"df[df['department'].str.startswith('New', na=False)]"
+Text/String Operations,Get rows where department field has the substring 'tech'.,department,,"df[df['department'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,List records where department begins with 'tech'.,department,,"df[df['department'].str.startswith('tech', na=False)]"
+Text/String Operations,Find all entries with email matching 'Service' exactly.,email,,df[df['email'] == 'Service']

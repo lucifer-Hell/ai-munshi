@@ -1,0 +1,101 @@
+query_type,query,df_command,col_1,col_2
+Sorting & Ranking,Show customers in increasing order of revenue.,"df.sort_values(by='revenue', ascending=True).head(10)",customers,revenue
+Sorting & Ranking,Display employees in order of decreasing units_sold.,"df.sort_values(by='units_sold', ascending=False).head(5)",employees,units_sold
+Sorting & Ranking,Get the highest sales values for each employees.,"df.sort_values(by='sales', ascending=False).head(5)",employees,sales
+Sorting & Ranking,Find top 3 stores with highest rating.,"df.sort_values(by='rating', ascending=False).head(3)",stores,rating
+Sorting & Ranking,Get the highest sales values for each departments.,"df.sort_values(by='sales', ascending=False).head(5)",departments,sales
+Sorting & Ranking,Find top 3 departments with highest units_sold.,"df.sort_values(by='units_sold', ascending=False).head(3)",departments,units_sold
+Sorting & Ranking,List the lowest revenue values grouped by stores.,"df.sort_values(by='revenue', ascending=True).head(10)",stores,revenue
+Sorting & Ranking,Show customers in increasing order of profit.,"df.sort_values(by='profit', ascending=True).head(10)",customers,profit
+Sorting & Ranking,Rank departments by units_sold.,df['units_sold_rank'] = df['units_sold'].rank(ascending=False),departments,units_sold
+Sorting & Ranking,Get the highest profit values for each stores.,"df.sort_values(by='profit', ascending=False).head(5)",stores,profit
+Sorting & Ranking,Rank employees by expenses.,df['expenses_rank'] = df['expenses'].rank(ascending=False),employees,expenses
+Sorting & Ranking,Show customers sorted by profit ascending.,"df.sort_values(by='profit', ascending=True)",customers,profit
+Sorting & Ranking,Show stores sorted by sales ascending.,"df.sort_values(by='sales', ascending=True)",stores,sales
+Sorting & Ranking,Rank stores by expenses.,df['expenses_rank'] = df['expenses'].rank(ascending=False),stores,expenses
+Sorting & Ranking,Display stores in order of decreasing expenses.,"df.sort_values(by='expenses', ascending=False).head(5)",stores,expenses
+Sorting & Ranking,Get bottom 10 stores based on sales.,"df.sort_values(by='sales', ascending=True).head(10)",stores,sales
+Sorting & Ranking,Get bottom 10 customers based on units_sold.,"df.sort_values(by='units_sold', ascending=True).head(10)",customers,units_sold
+Sorting & Ranking,Rank products by profit.,df['profit_rank'] = df['profit'].rank(ascending=False),products,profit
+Sorting & Ranking,Sort customers by profit in descending order.,"df.sort_values(by='profit', ascending=False)",customers,profit
+Sorting & Ranking,List top 5 employees by profit.,"df.sort_values(by='profit', ascending=False).head(5)",employees,profit
+Sorting & Ranking,Get bottom 10 products based on profit.,"df.sort_values(by='profit', ascending=True).head(10)",products,profit
+Sorting & Ranking,Find top 3 departments with highest units_sold.,"df.sort_values(by='units_sold', ascending=False).head(3)",departments,units_sold
+Sorting & Ranking,Display products in order of decreasing rating.,"df.sort_values(by='rating', ascending=False).head(5)",products,rating
+Sorting & Ranking,Get the highest rating values for each stores.,"df.sort_values(by='rating', ascending=False).head(5)",stores,rating
+Sorting & Ranking,Show customers in increasing order of sales.,"df.sort_values(by='sales', ascending=True).head(10)",customers,sales
+Sorting & Ranking,List the lowest revenue values grouped by products.,"df.sort_values(by='revenue', ascending=True).head(10)",products,revenue
+Sorting & Ranking,Find top 3 employees with highest expenses.,"df.sort_values(by='expenses', ascending=False).head(3)",employees,expenses
+Sorting & Ranking,Sort stores by sales in descending order.,"df.sort_values(by='sales', ascending=False)",stores,sales
+Sorting & Ranking,Sort stores by revenue in descending order.,"df.sort_values(by='revenue', ascending=False)",stores,revenue
+Sorting & Ranking,Find top 3 products with highest sales.,"df.sort_values(by='sales', ascending=False).head(3)",products,sales
+Sorting & Ranking,Rank products by rating.,df['rating_rank'] = df['rating'].rank(ascending=False),products,rating
+Sorting & Ranking,Rank departments by profit.,df['profit_rank'] = df['profit'].rank(ascending=False),departments,profit
+Sorting & Ranking,Get bottom 10 employees based on units_sold.,"df.sort_values(by='units_sold', ascending=True).head(10)",employees,units_sold
+Sorting & Ranking,Display customers in order of decreasing expenses.,"df.sort_values(by='expenses', ascending=False).head(5)",customers,expenses
+Sorting & Ranking,Get bottom 10 employees based on revenue.,"df.sort_values(by='revenue', ascending=True).head(10)",employees,revenue
+Sorting & Ranking,Sort customers by profit in descending order.,"df.sort_values(by='profit', ascending=False)",customers,profit
+Sorting & Ranking,List the lowest profit values grouped by employees.,"df.sort_values(by='profit', ascending=True).head(10)",employees,profit
+Sorting & Ranking,List the lowest revenue values grouped by employees.,"df.sort_values(by='revenue', ascending=True).head(10)",employees,revenue
+Sorting & Ranking,Show departments in increasing order of profit.,"df.sort_values(by='profit', ascending=True).head(10)",departments,profit
+Sorting & Ranking,Find top 3 products with highest profit.,"df.sort_values(by='profit', ascending=False).head(3)",products,profit
+Sorting & Ranking,Find top 3 customers with highest revenue.,"df.sort_values(by='revenue', ascending=False).head(3)",customers,revenue
+Sorting & Ranking,Sort stores by rating in descending order.,"df.sort_values(by='rating', ascending=False)",stores,rating
+Sorting & Ranking,List the lowest expenses values grouped by departments.,"df.sort_values(by='expenses', ascending=True).head(10)",departments,expenses
+Sorting & Ranking,Display departments in order of decreasing profit.,"df.sort_values(by='profit', ascending=False).head(5)",departments,profit
+Sorting & Ranking,Find top 3 employees with highest profit.,"df.sort_values(by='profit', ascending=False).head(3)",employees,profit
+Sorting & Ranking,Show products in increasing order of revenue.,"df.sort_values(by='revenue', ascending=True).head(10)",products,revenue
+Sorting & Ranking,Display customers in order of decreasing rating.,"df.sort_values(by='rating', ascending=False).head(5)",customers,rating
+Sorting & Ranking,List the lowest expenses values grouped by departments.,"df.sort_values(by='expenses', ascending=True).head(10)",departments,expenses
+Sorting & Ranking,Find top 3 products with highest expenses.,"df.sort_values(by='expenses', ascending=False).head(3)",products,expenses
+Sorting & Ranking,Display departments in order of decreasing sales.,"df.sort_values(by='sales', ascending=False).head(5)",departments,sales
+Sorting & Ranking,List the lowest units_sold values grouped by products.,"df.sort_values(by='units_sold', ascending=True).head(10)",products,units_sold
+Sorting & Ranking,Show departments in increasing order of revenue.,"df.sort_values(by='revenue', ascending=True).head(10)",departments,revenue
+Sorting & Ranking,List the lowest revenue values grouped by departments.,"df.sort_values(by='revenue', ascending=True).head(10)",departments,revenue
+Sorting & Ranking,Show customers sorted by rating ascending.,"df.sort_values(by='rating', ascending=True)",customers,rating
+Sorting & Ranking,Get bottom 10 products based on expenses.,"df.sort_values(by='expenses', ascending=True).head(10)",products,expenses
+Sorting & Ranking,List top 5 departments by profit.,"df.sort_values(by='profit', ascending=False).head(5)",departments,profit
+Sorting & Ranking,List top 5 customers by rating.,"df.sort_values(by='rating', ascending=False).head(5)",customers,rating
+Sorting & Ranking,Get bottom 10 products based on rating.,"df.sort_values(by='rating', ascending=True).head(10)",products,rating
+Sorting & Ranking,Rank stores by revenue.,df['revenue_rank'] = df['revenue'].rank(ascending=False),stores,revenue
+Sorting & Ranking,Show employees sorted by units_sold ascending.,"df.sort_values(by='units_sold', ascending=True)",employees,units_sold
+Sorting & Ranking,Rank customers by units_sold.,df['units_sold_rank'] = df['units_sold'].rank(ascending=False),customers,units_sold
+Sorting & Ranking,Find top 3 employees with highest rating.,"df.sort_values(by='rating', ascending=False).head(3)",employees,rating
+Sorting & Ranking,Show departments in increasing order of expenses.,"df.sort_values(by='expenses', ascending=True).head(10)",departments,expenses
+Sorting & Ranking,Rank products by profit.,df['profit_rank'] = df['profit'].rank(ascending=False),products,profit
+Sorting & Ranking,Sort employees by revenue in descending order.,"df.sort_values(by='revenue', ascending=False)",employees,revenue
+Sorting & Ranking,Display customers in order of decreasing rating.,"df.sort_values(by='rating', ascending=False).head(5)",customers,rating
+Sorting & Ranking,Sort stores by sales in descending order.,"df.sort_values(by='sales', ascending=False)",stores,sales
+Sorting & Ranking,Find top 3 customers with highest sales.,"df.sort_values(by='sales', ascending=False).head(3)",customers,sales
+Sorting & Ranking,Show departments in increasing order of expenses.,"df.sort_values(by='expenses', ascending=True).head(10)",departments,expenses
+Sorting & Ranking,Find top 3 customers with highest profit.,"df.sort_values(by='profit', ascending=False).head(3)",customers,profit
+Sorting & Ranking,Rank products by expenses.,df['expenses_rank'] = df['expenses'].rank(ascending=False),products,expenses
+Sorting & Ranking,Show stores sorted by sales ascending.,"df.sort_values(by='sales', ascending=True)",stores,sales
+Sorting & Ranking,List the lowest rating values grouped by customers.,"df.sort_values(by='rating', ascending=True).head(10)",customers,rating
+Sorting & Ranking,List the lowest expenses values grouped by employees.,"df.sort_values(by='expenses', ascending=True).head(10)",employees,expenses
+Sorting & Ranking,Sort stores by expenses in descending order.,"df.sort_values(by='expenses', ascending=False)",stores,expenses
+Sorting & Ranking,Find top 3 stores with highest sales.,"df.sort_values(by='sales', ascending=False).head(3)",stores,sales
+Sorting & Ranking,Get bottom 10 products based on sales.,"df.sort_values(by='sales', ascending=True).head(10)",products,sales
+Sorting & Ranking,Find top 2 stores with highest sales.,"df.sort_values(by='sales', ascending=False).head(2)",stores,sales
+Sorting & Ranking,Sort employees by units_sold in descending order.,"df.sort_values(by='units_sold', ascending=False)",employees,units_sold
+Sorting & Ranking,Get bottom 10 stores based on profit.,"df.sort_values(by='profit', ascending=True).head(10)",stores,profit
+Sorting & Ranking,Rank customers by profit.,df['profit_rank'] = df['profit'].rank(ascending=False),customers,profit
+Sorting & Ranking,List the lowest profit values grouped by employees.,"df.sort_values(by='profit', ascending=True).head(10)",employees,profit
+Sorting & Ranking,Sort stores by units_sold in descending order.,"df.sort_values(by='units_sold', ascending=False)",stores,units_sold
+Sorting & Ranking,Display departments in order of decreasing sales.,"df.sort_values(by='sales', ascending=False).head(5)",departments,sales
+Sorting & Ranking,Rank employees by profit.,df['profit_rank'] = df['profit'].rank(ascending=False),employees,profit
+Sorting & Ranking,Show employees in increasing order of rating.,"df.sort_values(by='rating', ascending=True).head(10)",employees,rating
+Sorting & Ranking,Sort departments by units_sold in descending order.,"df.sort_values(by='units_sold', ascending=False)",departments,units_sold
+Sorting & Ranking,Rank products by profit.,df['profit_rank'] = df['profit'].rank(ascending=False),products,profit
+Sorting & Ranking,Find top 2 employees with highest sales.,"df.sort_values(by='sales', ascending=False).head(2)",employees,sales
+Sorting & Ranking,Show products in increasing order of expenses.,"df.sort_values(by='expenses', ascending=True).head(10)",products,expenses
+Sorting & Ranking,Show customers sorted by sales ascending.,"df.sort_values(by='sales', ascending=True)",customers,sales
+Sorting & Ranking,List top 5 departments by revenue.,"df.sort_values(by='revenue', ascending=False).head(5)",departments,revenue
+Sorting & Ranking,Get bottom 10 customers based on revenue.,"df.sort_values(by='revenue', ascending=True).head(10)",customers,revenue
+Sorting & Ranking,Sort customers by revenue in descending order.,"df.sort_values(by='revenue', ascending=False)",customers,revenue
+Sorting & Ranking,List the lowest revenue values grouped by employees.,"df.sort_values(by='revenue', ascending=True).head(10)",employees,revenue
+Sorting & Ranking,Rank employees by units_sold.,df['units_sold_rank'] = df['units_sold'].rank(ascending=False),employees,units_sold
+Sorting & Ranking,List top 5 departments by revenue.,"df.sort_values(by='revenue', ascending=False).head(5)",departments,revenue
+Sorting & Ranking,Get bottom 10 customers based on rating.,"df.sort_values(by='rating', ascending=True).head(10)",customers,rating
+Sorting & Ranking,Get bottom 10 products based on expenses.,"df.sort_values(by='expenses', ascending=True).head(10)",products,expenses
+Sorting & Ranking,List top 5 employees by sales.,"df.sort_values(by='sales', ascending=False).head(5)",employees,sales
