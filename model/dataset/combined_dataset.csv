@@ -1,119 +1,365 @@
 query_type,query,col_1,col_2,df_command
-Aggregation,Get the number of quantity values grouped by channel.,channel,quantity,df.groupby('channel')['quantity'].agg('count')
-Aggregation,Compute the minimum cost per region.,region,cost,df.groupby('region')['cost'].agg('min')
-Aggregation,Get the average cost grouped by month.,month,cost,df.groupby('month')['cost'].agg('mean')
-Aggregation,Give the median month for each month.,month,month,df.groupby('month')['month'].agg('median')
-Aggregation,Find standard deviation of profit grouped by store_id.,store_id,profit,df.groupby('store_id')['profit'].agg('std')
-Aggregation,Calculate the total expenses for each channel.,channel,expenses,df.groupby('channel')['expenses'].agg('sum')
-Aggregation,Find the maximum cost in every department.,department,cost,df.groupby('department')['cost'].agg('max')
-Aggregation,Compute the minimum cost per category.,category,cost,df.groupby('category')['cost'].agg('min')
-Aggregation,Show the sum of profit across city.,city,profit,df.groupby('city')['profit'].agg('sum')
-Aggregation,Find the maximum cost in every channel.,channel,cost,df.groupby('channel')['cost'].agg('max')
-Aggregation,Calculate the total tax for each city.,city,tax,df.groupby('city')['tax'].agg('sum')
-Aggregation,List the count of sales for each department.,department,sales,df.groupby('department')['sales'].agg('count')
-Aggregation,Give the median expenses for each customer_type.,customer_type,expenses,df.groupby('customer_type')['expenses'].agg('median')
-Aggregation,Calculate the total units_sold for each category.,category,units_sold,df.groupby('category')['units_sold'].agg('sum')
-Aggregation,Get the average store_id grouped by store_id.,store_id,store_id,df.groupby('store_id')['store_id'].agg('mean')
-Aggregation,Get the average cost grouped by product.,product,cost,df.groupby('product')['cost'].agg('mean')
-Aggregation,Find the maximum quantity in every channel.,channel,quantity,df.groupby('channel')['quantity'].agg('max')
-Aggregation,Find the maximum expenses in every channel.,channel,expenses,df.groupby('channel')['expenses'].agg('max')
-Aggregation,Get the number of order_value values grouped by customer_type.,customer_type,order_value,df.groupby('customer_type')['order_value'].agg('count')
-Aggregation,Show how many units_sold entries exist per month.,month,units_sold,df.groupby('month')['units_sold'].agg('count')
-Aggregation,Find standard deviation of discount grouped by store_id.,store_id,discount,df.groupby('store_id')['discount'].agg('std')
-Aggregation,Show how many quantity entries exist per department.,department,quantity,df.groupby('department')['quantity'].agg('count')
-Aggregation,Show the sum of units_sold across department.,department,units_sold,df.groupby('department')['units_sold'].agg('sum')
-Aggregation,Give the median sales for each category.,category,sales,df.groupby('category')['sales'].agg('median')
-Aggregation,Show how many units_sold entries exist per category.,category,units_sold,df.groupby('category')['units_sold'].agg('count')
-Aggregation,Show the sum of sales across department.,department,sales,df.groupby('department')['sales'].agg('sum')
-Aggregation,Calculate the total units_sold for each department.,department,units_sold,df.groupby('department')['units_sold'].agg('sum')
-Aggregation,Calculate the total discount for each department.,department,discount,df.groupby('department')['discount'].agg('sum')
-Aggregation,Show how many units_sold entries exist per month.,month,units_sold,df.groupby('month')['units_sold'].agg('count')
-Aggregation,List the count of units_sold for each channel.,channel,units_sold,df.groupby('channel')['units_sold'].agg('count')
-Aggregation,Find the maximum tax in every category.,category,tax,df.groupby('category')['tax'].agg('max')
-Aggregation,List the count of units_sold for each store_id.,store_id,units_sold,df.groupby('store_id')['units_sold'].agg('count')
-Aggregation,Find standard deviation of units_sold grouped by department.,department,units_sold,df.groupby('department')['units_sold'].agg('std')
-Aggregation,Get the average order_value grouped by city.,city,order_value,df.groupby('city')['order_value'].agg('mean')
-Aggregation,Find standard deviation of order_value grouped by store_id.,store_id,order_value,df.groupby('store_id')['order_value'].agg('std')
-Aggregation,Calculate the total region for each region.,region,region,df.groupby('region')['region'].agg('sum')
-Aggregation,Find standard deviation of discount grouped by department.,department,discount,df.groupby('department')['discount'].agg('std')
-Aggregation,Show the sum of units_sold across customer_type.,customer_type,units_sold,df.groupby('customer_type')['units_sold'].agg('sum')
-Aggregation,Show how many quantity entries exist per product.,product,quantity,df.groupby('product')['quantity'].agg('count')
-Aggregation,Find standard deviation of profit grouped by month.,month,profit,df.groupby('month')['profit'].agg('std')
-Aggregation,List the count of units_sold for each department.,department,units_sold,df.groupby('department')['units_sold'].agg('count')
-Aggregation,List the count of cost for each department.,department,cost,df.groupby('department')['cost'].agg('count')
-Aggregation,Calculate the total cost for each region.,region,cost,df.groupby('region')['cost'].agg('sum')
-Aggregation,Get the average units_sold grouped by product.,product,units_sold,df.groupby('product')['units_sold'].agg('mean')
-Aggregation,Find standard deviation of quantity grouped by store_id.,store_id,quantity,df.groupby('store_id')['quantity'].agg('std')
-Aggregation,Show the sum of order_value across region.,region,order_value,df.groupby('region')['order_value'].agg('sum')
-Aggregation,Find the maximum order_value in every region.,region,order_value,df.groupby('region')['order_value'].agg('max')
-Aggregation,Find standard deviation of expenses grouped by store_id.,store_id,expenses,df.groupby('store_id')['expenses'].agg('std')
-Aggregation,Compute the minimum order_value per channel.,channel,order_value,df.groupby('channel')['order_value'].agg('min')
-Aggregation,List the count of profit for each customer_type.,customer_type,profit,df.groupby('customer_type')['profit'].agg('count')
-Aggregation,Compute the minimum units_sold per region.,region,units_sold,df.groupby('region')['units_sold'].agg('min')
-Aggregation,Get the number of cost values grouped by region.,region,cost,df.groupby('region')['cost'].agg('count')
-Aggregation,Give the median sales for each region.,region,sales,df.groupby('region')['sales'].agg('median')
-Aggregation,Get the number of quantity values grouped by channel.,channel,quantity,df.groupby('channel')['quantity'].agg('count')
-Aggregation,Show how many profit entries exist per region.,region,profit,df.groupby('region')['profit'].agg('count')
-Aggregation,Show how many product entries exist per product.,product,product,df.groupby('product')['product'].agg('count')
-Aggregation,Get the average tax grouped by department.,department,tax,df.groupby('department')['tax'].agg('mean')
-Aggregation,Show the sum of order_value across department.,department,order_value,df.groupby('department')['order_value'].agg('sum')
-Aggregation,Get the number of units_sold values grouped by category.,category,units_sold,df.groupby('category')['units_sold'].agg('count')
-Aggregation,Get the number of sales values grouped by category.,category,sales,df.groupby('category')['sales'].agg('count')
-Aggregation,Get the average order_value grouped by category.,category,order_value,df.groupby('category')['order_value'].agg('mean')
-Aggregation,Get the number of cost values grouped by city.,city,cost,df.groupby('city')['cost'].agg('count')
-Aggregation,Compute the minimum units_sold per city.,city,units_sold,df.groupby('city')['units_sold'].agg('min')
-Aggregation,Show the sum of expenses across employee.,employee,expenses,df.groupby('employee')['expenses'].agg('sum')
-Aggregation,Find the maximum expenses in every store_id.,store_id,expenses,df.groupby('store_id')['expenses'].agg('max')
-Aggregation,Give the median region for each region.,region,region,df.groupby('region')['region'].agg('median')
-Aggregation,List the count of tax for each category.,category,tax,df.groupby('category')['tax'].agg('count')
-Aggregation,Get the average channel grouped by channel.,channel,channel,df.groupby('channel')['channel'].agg('mean')
-Aggregation,Show the sum of cost across month.,month,cost,df.groupby('month')['cost'].agg('sum')
-Aggregation,Find the maximum discount in every department.,department,discount,df.groupby('department')['discount'].agg('max')
-Aggregation,Show the sum of discount across month.,month,discount,df.groupby('month')['discount'].agg('sum')
-Aggregation,Find the maximum quantity in every channel.,channel,quantity,df.groupby('channel')['quantity'].agg('max')
-Aggregation,Compute the minimum tax per channel.,channel,tax,df.groupby('channel')['tax'].agg('min')
-Aggregation,Calculate the total cost for each month.,month,cost,df.groupby('month')['cost'].agg('sum')
-Aggregation,Get the average profit grouped by month.,month,profit,df.groupby('month')['profit'].agg('mean')
-Aggregation,Get the average channel grouped by channel.,channel,channel,df.groupby('channel')['channel'].agg('mean')
-Aggregation,Find the maximum expenses in every month.,month,expenses,df.groupby('month')['expenses'].agg('max')
-Aggregation,Get the number of units_sold values grouped by city.,city,units_sold,df.groupby('city')['units_sold'].agg('count')
-Aggregation,Show the sum of expenses across channel.,channel,expenses,df.groupby('channel')['expenses'].agg('sum')
-Aggregation,List the count of expenses for each region.,region,expenses,df.groupby('region')['expenses'].agg('count')
-Aggregation,Get the average order_value grouped by month.,month,order_value,df.groupby('month')['order_value'].agg('mean')
-Aggregation,Calculate the total sales for each city.,city,sales,df.groupby('city')['sales'].agg('sum')
-Aggregation,Find the maximum expenses in every product.,product,expenses,df.groupby('product')['expenses'].agg('max')
-Aggregation,List the count of cost for each employee.,employee,cost,df.groupby('employee')['cost'].agg('count')
-Aggregation,Show how many sales entries exist per department.,department,sales,df.groupby('department')['sales'].agg('count')
-Aggregation,Get the average profit grouped by channel.,channel,profit,df.groupby('channel')['profit'].agg('mean')
-Aggregation,Calculate the total discount for each category.,category,discount,df.groupby('category')['discount'].agg('sum')
-Aggregation,Show how many profit entries exist per employee.,employee,profit,df.groupby('employee')['profit'].agg('count')
-Aggregation,Find the maximum sales in every month.,month,sales,df.groupby('month')['sales'].agg('max')
-Aggregation,Give the median sales for each city.,city,sales,df.groupby('city')['sales'].agg('median')
-Aggregation,Show the sum of units_sold across department.,department,units_sold,df.groupby('department')['units_sold'].agg('sum')
-Aggregation,Give the median cost for each employee.,employee,cost,df.groupby('employee')['cost'].agg('median')
-Aggregation,Get the number of profit values grouped by customer_type.,customer_type,profit,df.groupby('customer_type')['profit'].agg('count')
-Aggregation,Find the maximum profit in every employee.,employee,profit,df.groupby('employee')['profit'].agg('max')
-Aggregation,Calculate the total profit for each city.,city,profit,df.groupby('city')['profit'].agg('sum')
-Aggregation,Find standard deviation of units_sold grouped by month.,month,units_sold,df.groupby('month')['units_sold'].agg('std')
-Aggregation,Find the maximum employee in every employee.,employee,employee,df.groupby('employee')['employee'].agg('max')
-Aggregation,Calculate the total quantity for each customer_type.,customer_type,quantity,df.groupby('customer_type')['quantity'].agg('sum')
-Aggregation,Show the sum of quantity across city.,city,quantity,df.groupby('city')['quantity'].agg('sum')
-Aggregation,Compute the minimum units_sold per customer_type.,customer_type,units_sold,df.groupby('customer_type')['units_sold'].agg('min')
-Sorting & Ranking,Show customers in increasing order of revenue.,customers,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
-Sorting & Ranking,Display employees in order of decreasing units_sold.,employees,units_sold,"df.sort_values(by='units_sold', ascending=False).head(5)"
-Sorting & Ranking,Get the highest sales values for each employees.,employees,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Aggregation,Get the number of quantity values grouped by channel.,channel,quantity,df.groupby('channel')['quantity'].agg('count').reset_index()
+Aggregation,Compute the minimum cost per region.,region,cost,df.groupby('region')['cost'].agg('min').reset_index()
+Aggregation,Get the average cost grouped by month.,month,cost,df.groupby('month')['cost'].agg('mean').reset_index()
+Aggregation,Give the median month for each month.,month,month,df.groupby('month')['month'].agg('median').reset_index()
+Aggregation,Find standard deviation of profit grouped by store_id.,store_id,profit,df.groupby('store_id')['profit'].agg('std').reset_index()
+Aggregation,Calculate the total expenses for each channel.,channel,expenses,df.groupby('channel')['expenses'].agg('sum').reset_index()
+Aggregation,Find the maximum cost in every department.,department,cost,df.groupby('department')['cost'].agg('max').reset_index()
+Aggregation,Compute the minimum cost per category.,category,cost,df.groupby('category')['cost'].agg('min').reset_index()
+Aggregation,Show the sum of profit across city.,city,profit,df.groupby('city')['profit'].agg('sum').reset_index()
+Aggregation,Find the maximum cost in every channel.,channel,cost,df.groupby('channel')['cost'].agg('max').reset_index()
+Aggregation,Calculate the total tax for each city.,city,tax,df.groupby('city')['tax'].agg('sum').reset_index()
+Aggregation,List the count of sales for each department.,department,sales,df.groupby('department')['sales'].agg('count').reset_index()
+Aggregation,Give the median expenses for each customer_type.,customer_type,expenses,df.groupby('customer_type')['expenses'].agg('median').reset_index()
+Aggregation,Calculate the total units_sold for each category.,category,units_sold,df.groupby('category')['units_sold'].agg('sum').reset_index()
+Aggregation,Get the average store_id grouped by store_id.,store_id,store_id,df.groupby('store_id')['store_id'].agg('mean').reset_index()
+Aggregation,Get the average cost grouped by product.,product,cost,df.groupby('product')['cost'].agg('mean').reset_index()
+Aggregation,Find the maximum quantity in every channel.,channel,quantity,df.groupby('channel')['quantity'].agg('max').reset_index()
+Aggregation,Find the maximum expenses in every channel.,channel,expenses,df.groupby('channel')['expenses'].agg('max').reset_index()
+Aggregation,Get the number of order_value values grouped by customer_type.,customer_type,order_value,df.groupby('customer_type')['order_value'].agg('count').reset_index()
+Aggregation,Show how many units_sold entries exist per month.,month,units_sold,df.groupby('month')['units_sold'].agg('count').reset_index()
+Aggregation,Find standard deviation of discount grouped by store_id.,store_id,discount,df.groupby('store_id')['discount'].agg('std').reset_index()
+Aggregation,Show how many quantity entries exist per department.,department,quantity,df.groupby('department')['quantity'].agg('count').reset_index()
+Aggregation,Show the sum of units_sold across department.,department,units_sold,df.groupby('department')['units_sold'].agg('sum').reset_index()
+Aggregation,Give the median sales for each category.,category,sales,df.groupby('category')['sales'].agg('median').reset_index()
+Aggregation,Show how many units_sold entries exist per category.,category,units_sold,df.groupby('category')['units_sold'].agg('count').reset_index()
+Aggregation,Show the sum of sales across department.,department,sales,df.groupby('department')['sales'].agg('sum').reset_index()
+Aggregation,Calculate the total units_sold for each department.,department,units_sold,df.groupby('department')['units_sold'].agg('sum').reset_index()
+Aggregation,Calculate the total discount for each department.,department,discount,df.groupby('department')['discount'].agg('sum').reset_index()
+Aggregation,Show how many units_sold entries exist per month.,month,units_sold,df.groupby('month')['units_sold'].agg('count').reset_index()
+Aggregation,List the count of units_sold for each channel.,channel,units_sold,df.groupby('channel')['units_sold'].agg('count').reset_index()
+Aggregation,Find the maximum tax in every category.,category,tax,df.groupby('category')['tax'].agg('max').reset_index()
+Aggregation,List the count of units_sold for each store_id.,store_id,units_sold,df.groupby('store_id')['units_sold'].agg('count').reset_index()
+Aggregation,Find standard deviation of units_sold grouped by department.,department,units_sold,df.groupby('department')['units_sold'].agg('std').reset_index()
+Aggregation,Get the average order_value grouped by city.,city,order_value,df.groupby('city')['order_value'].agg('mean').reset_index()
+Aggregation,Find standard deviation of order_value grouped by store_id.,store_id,order_value,df.groupby('store_id')['order_value'].agg('std').reset_index()
+Aggregation,Calculate the total region for each region.,region,region,df.groupby('region')['region'].agg('sum').reset_index()
+Aggregation,Find standard deviation of discount grouped by department.,department,discount,df.groupby('department')['discount'].agg('std').reset_index()
+Aggregation,Show the sum of units_sold across customer_type.,customer_type,units_sold,df.groupby('customer_type')['units_sold'].agg('sum').reset_index()
+Aggregation,Show how many quantity entries exist per product.,product,quantity,df.groupby('product')['quantity'].agg('count').reset_index()
+Aggregation,Find standard deviation of profit grouped by month.,month,profit,df.groupby('month')['profit'].agg('std').reset_index()
+Aggregation,List the count of units_sold for each department.,department,units_sold,df.groupby('department')['units_sold'].agg('count').reset_index()
+Aggregation,List the count of cost for each department.,department,cost,df.groupby('department')['cost'].agg('count').reset_index()
+Aggregation,Calculate the total cost for each region.,region,cost,df.groupby('region')['cost'].agg('sum').reset_index()
+Aggregation,Get the average units_sold grouped by product.,product,units_sold,df.groupby('product')['units_sold'].agg('mean').reset_index()
+Aggregation,Find standard deviation of quantity grouped by store_id.,store_id,quantity,df.groupby('store_id')['quantity'].agg('std').reset_index()
+Aggregation,Show the sum of order_value across region.,region,order_value,df.groupby('region')['order_value'].agg('sum').reset_index()
+Aggregation,Find the maximum order_value in every region.,region,order_value,df.groupby('region')['order_value'].agg('max').reset_index()
+Aggregation,Find standard deviation of expenses grouped by store_id.,store_id,expenses,df.groupby('store_id')['expenses'].agg('std').reset_index()
+Aggregation,Compute the minimum order_value per channel.,channel,order_value,df.groupby('channel')['order_value'].agg('min').reset_index()
+Aggregation,List the count of profit for each customer_type.,customer_type,profit,df.groupby('customer_type')['profit'].agg('count').reset_index()
+Aggregation,Compute the minimum units_sold per region.,region,units_sold,df.groupby('region')['units_sold'].agg('min').reset_index()
+Aggregation,Get the number of cost values grouped by region.,region,cost,df.groupby('region')['cost'].agg('count').reset_index()
+Aggregation,Give the median sales for each region.,region,sales,df.groupby('region')['sales'].agg('median').reset_index()
+Aggregation,Get the number of quantity values grouped by channel.,channel,quantity,df.groupby('channel')['quantity'].agg('count').reset_index()
+Aggregation,Show how many profit entries exist per region.,region,profit,df.groupby('region')['profit'].agg('count').reset_index()
+Aggregation,Show how many product entries exist per product.,product,product,df.groupby('product')['product'].agg('count').reset_index()
+Aggregation,Get the average tax grouped by department.,department,tax,df.groupby('department')['tax'].agg('mean').reset_index()
+Aggregation,Show the sum of order_value across department.,department,order_value,df.groupby('department')['order_value'].agg('sum').reset_index()
+Aggregation,Get the number of units_sold values grouped by category.,category,units_sold,df.groupby('category')['units_sold'].agg('count').reset_index()
+Aggregation,Get the number of sales values grouped by category.,category,sales,df.groupby('category')['sales'].agg('count').reset_index()
+Aggregation,Get the average order_value grouped by category.,category,order_value,df.groupby('category')['order_value'].agg('mean').reset_index()
+Aggregation,Get the number of cost values grouped by city.,city,cost,df.groupby('city')['cost'].agg('count').reset_index()
+Aggregation,Compute the minimum units_sold per city.,city,units_sold,df.groupby('city')['units_sold'].agg('min').reset_index()
+Aggregation,Show the sum of expenses across employee.,employee,expenses,df.groupby('employee')['expenses'].agg('sum').reset_index()
+Aggregation,Find the maximum expenses in every store_id.,store_id,expenses,df.groupby('store_id')['expenses'].agg('max').reset_index()
+Aggregation,Give the median region for each region.,region,region,df.groupby('region')['region'].agg('median').reset_index()
+Aggregation,List the count of tax for each category.,category,tax,df.groupby('category')['tax'].agg('count').reset_index()
+Aggregation,Get the average channel grouped by channel.,channel,channel,df.groupby('channel')['channel'].agg('mean').reset_index()
+Aggregation,Show the sum of cost across month.,month,cost,df.groupby('month')['cost'].agg('sum').reset_index()
+Aggregation,Find the maximum discount in every department.,department,discount,df.groupby('department')['discount'].agg('max').reset_index()
+Aggregation,Show the sum of discount across month.,month,discount,df.groupby('month')['discount'].agg('sum').reset_index()
+Aggregation,Find the maximum quantity in every channel.,channel,quantity,df.groupby('channel')['quantity'].agg('max').reset_index()
+Aggregation,Compute the minimum tax per channel.,channel,tax,df.groupby('channel')['tax'].agg('min').reset_index()
+Aggregation,Calculate the total cost for each month.,month,cost,df.groupby('month')['cost'].agg('sum').reset_index()
+Aggregation,Get the average profit grouped by month.,month,profit,df.groupby('month')['profit'].agg('mean').reset_index()
+Aggregation,Get the average channel grouped by channel.,channel,channel,df.groupby('channel')['channel'].agg('mean').reset_index()
+Aggregation,Find the maximum expenses in every month.,month,expenses,df.groupby('month')['expenses'].agg('max').reset_index()
+Aggregation,Get the number of units_sold values grouped by city.,city,units_sold,df.groupby('city')['units_sold'].agg('count').reset_index()
+Aggregation,Show the sum of expenses across channel.,channel,expenses,df.groupby('channel')['expenses'].agg('sum').reset_index()
+Aggregation,List the count of expenses for each region.,region,expenses,df.groupby('region')['expenses'].agg('count').reset_index()
+Aggregation,Get the average order_value grouped by month.,month,order_value,df.groupby('month')['order_value'].agg('mean').reset_index()
+Aggregation,Calculate the total sales for each city.,city,sales,df.groupby('city')['sales'].agg('sum').reset_index()
+Aggregation,Find the maximum expenses in every product.,product,expenses,df.groupby('product')['expenses'].agg('max').reset_index()
+Aggregation,List the count of cost for each employee.,employee,cost,df.groupby('employee')['cost'].agg('count').reset_index()
+Aggregation,Show how many sales entries exist per department.,department,sales,df.groupby('department')['sales'].agg('count').reset_index()
+Aggregation,Get the average profit grouped by channel.,channel,profit,df.groupby('channel')['profit'].agg('mean').reset_index()
+Aggregation,Calculate the total discount for each category.,category,discount,df.groupby('category')['discount'].agg('sum').reset_index()
+Aggregation,Show how many profit entries exist per employee.,employee,profit,df.groupby('employee')['profit'].agg('count').reset_index()
+Aggregation,Find the maximum sales in every month.,month,sales,df.groupby('month')['sales'].agg('max').reset_index()
+Aggregation,Give the median sales for each city.,city,sales,df.groupby('city')['sales'].agg('median').reset_index()
+Aggregation,Show the sum of units_sold across department.,department,units_sold,df.groupby('department')['units_sold'].agg('sum').reset_index()
+Aggregation,Give the median cost for each employee.,employee,cost,df.groupby('employee')['cost'].agg('median').reset_index()
+Aggregation,Get the number of profit values grouped by customer_type.,customer_type,profit,df.groupby('customer_type')['profit'].agg('count').reset_index()
+Aggregation,Find the maximum profit in every employee.,employee,profit,df.groupby('employee')['profit'].agg('max').reset_index()
+Aggregation,Calculate the total profit for each city.,city,profit,df.groupby('city')['profit'].agg('sum').reset_index()
+Aggregation,Find standard deviation of units_sold grouped by month.,month,units_sold,df.groupby('month')['units_sold'].agg('std').reset_index()
+Aggregation,Find the maximum employee in every employee.,employee,employee,df.groupby('employee')['employee'].agg('max').reset_index()
+Aggregation,Calculate the total quantity for each customer_type.,customer_type,quantity,df.groupby('customer_type')['quantity'].agg('sum').reset_index()
+Aggregation,Show the sum of quantity across city.,city,quantity,df.groupby('city')['quantity'].agg('sum').reset_index()
+Aggregation,Compute the minimum units_sold per customer_type.,customer_type,units_sold,df.groupby('customer_type')['units_sold'].agg('min').reset_index()
+Aggregation,group job id and apply min on Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('min').reset_index()
+Aggregation,group JOB ID and apply count on Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('count').reset_index()
+Aggregation,group job identifier and apply sum on Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('sum').reset_index()
+Aggregation,agcy wise std of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('std').reset_index()
+Aggregation,group AGENCY and apply mean on # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('mean').reset_index()
+Aggregation,group the data by AGENCY and get sum of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('sum').reset_index()
+Aggregation,min Level per biz title,Business Title,Level,df.groupby('Business Title')['Level'].agg('min').reset_index()
+Aggregation,group the data by biz title and get max of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('max').reset_index()
+Aggregation,aggregate # Of Positions by civil title using max,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('max').reset_index()
+Aggregation,group civil title and apply median on # Of Positions,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('median').reset_index()
+Aggregation,count Job ID per title class,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('count').reset_index()
+Aggregation,group title code no and apply median on Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('median').reset_index()
+Aggregation,group the data by tcode and get count of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('count').reset_index()
+Aggregation,count Level based on tile code,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('count').reset_index()
+Aggregation,sum # Of Positions by agency,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('sum').reset_index()
+Aggregation,median Level by Job Id,Job ID,Level,df.groupby('Job ID')['Level'].agg('median').reset_index()
+Aggregation,count Level per official title,Business Title,Level,df.groupby('Business Title')['Level'].agg('count').reset_index()
+Aggregation,organize by service title and get sum of # Of Positions,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('sum').reset_index()
+Aggregation,categorized by tile code and get mean of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('mean').reset_index()
+Aggregation,split by agcy and get min of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('min').reset_index()
+Aggregation,min Level wise title code,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('min').reset_index()
+Aggregation,group by organisation and get max of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('max').reset_index()
+Aggregation,sum Level grpby title of job,Business Title,Level,df.groupby('Business Title')['Level'].agg('sum').reset_index()
+Aggregation,max Job ID per title classfn,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('max').reset_index()
+Aggregation,sum Level grp biz title,Business Title,Level,df.groupby('Business Title')['Level'].agg('sum').reset_index()
+Aggregation,organize by title and get count of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('count').reset_index()
+Aggregation,bucket by titlecode number and get median of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('median').reset_index()
+Aggregation,partition by business title and get count of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('count').reset_index()
+Aggregation,count Level by JOB ID,Job ID,Level,df.groupby('Job ID')['Level'].agg('count').reset_index()
+Aggregation,std Level grpby tcode,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,max # Of Positions based on service title,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('max').reset_index()
+Aggregation,partition by classification and get mean of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('mean').reset_index()
+Aggregation,groub by title classfn and get std of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('std').reset_index()
+Aggregation,max Job ID grpby PostingType,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('max').reset_index()
+Aggregation,group by job id and get max of Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('max').reset_index()
+Aggregation,max Job ID grp posting type,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('max').reset_index()
+Aggregation,groub by classification and get mean of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('mean').reset_index()
+Aggregation,organize by posting and get median of Job ID,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('median').reset_index()
+Aggregation,split by tcode and get std of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,mean Level wise job identifier,Job ID,Level,df.groupby('Job ID')['Level'].agg('mean').reset_index()
+Aggregation,grup by biz title and get max of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('max').reset_index()
+Aggregation,split by biz title and get median of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('median').reset_index()
+Aggregation,categorized by title_code and get std of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,count Level on the basis of job id,Job ID,Level,df.groupby('Job ID')['Level'].agg('count').reset_index()
+Aggregation,partition by classification and get min of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('min').reset_index()
+Aggregation,categorized by agency and get std of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('std').reset_index()
+Aggregation,cluster by agcy and get std of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('std').reset_index()
+Aggregation,grup by agency and get mean of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('mean').reset_index()
+Aggregation,categorized by title and get std of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('std').reset_index()
+Aggregation,categorized by AGENCY and get std of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('std').reset_index()
+Aggregation,partition by title class and get mean of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('mean').reset_index()
+Aggregation,std Level based on job id,Job ID,Level,df.groupby('Job ID')['Level'].agg('std').reset_index()
+Aggregation,partition by AGENCY and get min of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('min').reset_index()
+Aggregation,std Level by job identifier,Job ID,Level,df.groupby('Job ID')['Level'].agg('std').reset_index()
+Aggregation,max Level grp title of job,Business Title,Level,df.groupby('Business Title')['Level'].agg('max').reset_index()
+Aggregation,groub by agcy and get min of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('min').reset_index()
+Aggregation,partition by title of job and get max of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('max').reset_index()
+Aggregation,groop by title classfn and get mean of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('mean').reset_index()
+Aggregation,groub by post type and get median of Job ID,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('median').reset_index()
+Aggregation,organize by job id and get mean of Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('mean').reset_index()
+Aggregation,std Level based on job id,Job ID,Level,df.groupby('Job ID')['Level'].agg('std').reset_index()
+Aggregation,max # Of Positions based on agency,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('max').reset_index()
+Aggregation,split by Job Id and get mean of Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('mean').reset_index()
+Aggregation,count # Of Positions grpby service title,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('count').reset_index()
+Aggregation,partition by PostingType and get sum of Job ID,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('sum').reset_index()
+Aggregation,group by job identifier and get mean of Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('mean').reset_index()
+Aggregation,split by posting and get std of Job ID,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('std').reset_index()
+Aggregation,partition by tile code and get sum of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('sum').reset_index()
+Aggregation,i want to see it group organisation,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,can you grp type of post?,Posting Type,,df.groupby('Posting Type').first().reset_index()
+Aggregation,i want to see it by title of job,Business Title,,df.groupby('Business Title').first().reset_index()
+Aggregation,grpby organisation,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,i want to see it based on title,Business Title,,df.groupby('Business Title').first().reset_index()
+Aggregation,show data by AGENCY,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,show data categorize by PostingType,Posting Type,,df.groupby('Posting Type').first().reset_index()
+Aggregation,grp biz title,Business Title,,df.groupby('Business Title').first().reset_index()
+Aggregation,can you organize by AGENCY?,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,categorize by cst,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,cluster by Agency,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,i want to see it grp cst,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,i want to see it grpby biz title,Business Title,,df.groupby('Business Title').first().reset_index()
+Aggregation,based on service title,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,can you cluster by govt title?,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,show data organize by title code no,Title Code No,,df.groupby('Title Code No').first().reset_index()
+Aggregation,can you grouped by j o b i d?,Job ID,,df.groupby('Job ID').first().reset_index()
+Aggregation,grouped by AGENCY,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,can you split by agcy?,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,show data by govt title,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,Could you group the data by title code and show the mean of Level?,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('mean').reset_index()
+Aggregation,I'd like to know the count of Job ID by title classification.,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('count').reset_index()
+Aggregation,How many # Of Positions values are there per civil title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('mean').reset_index()
+Aggregation,Which title code no has the highest Level std?,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,Can you show me the max # Of Positions grouped by service title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('max').reset_index()
+Aggregation,What’s the min of # Of Positions in each AGENCY group?,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('min').reset_index()
+Aggregation,List count # Of Positions per civil service.,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('count').reset_index()
+Aggregation,Can you show me the mean Level grouped by tile code?,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('mean').reset_index()
+Aggregation,List sum # Of Positions per Agency.,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('sum').reset_index()
+Aggregation,Could you group the data by Agency and show the count of # Of Positions?,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('count').reset_index()
+Aggregation,Which service title has the highest # Of Positions std?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('std').reset_index()
+Aggregation,I'd like to know the min of Level by business title.,Business Title,Level,df.groupby('Business Title')['Level'].agg('min').reset_index()
+Aggregation,Which title classfn has the highest Job ID count?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('count').reset_index()
+Aggregation,Could you group the data by biz title and show the count of Level?,Business Title,Level,df.groupby('Business Title')['Level'].agg('count').reset_index()
+Aggregation,Which j o b i d has the highest Level min?,Job ID,Level,df.groupby('Job ID')['Level'].agg('min').reset_index()
+Aggregation,List std Level per official title.,Business Title,Level,df.groupby('Business Title')['Level'].agg('std').reset_index()
+Aggregation,Give me the std of # Of Positions for every cst.,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('std').reset_index()
+Aggregation,How is Job ID distributed across title classfn?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('std').reset_index()
+Aggregation,Which business title has the highest Level sum?,Business Title,Level,df.groupby('Business Title')['Level'].agg('sum').reset_index()
+Aggregation,Could you group the data by title class and show the sum of Job ID?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('sum').reset_index()
+Aggregation,How is Job ID distributed across title classfn?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('count').reset_index()
+Aggregation,What’s the count of Level in each j o b i d group?,Job ID,Level,df.groupby('Job ID')['Level'].agg('count').reset_index()
+Aggregation,How many Job ID values are there per title classification?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('sum').reset_index()
+Aggregation,How many # Of Positions values are there per civil title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('count').reset_index()
+Aggregation,Can you show me the min # Of Positions grouped by civil title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('min').reset_index()
+Aggregation,group job id and apply min on Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('min').reset_index()
+Aggregation,group JOB ID and apply count on Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('count').reset_index()
+Aggregation,group job identifier and apply sum on Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('sum').reset_index()
+Aggregation,agcy wise std of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('std').reset_index()
+Aggregation,group AGENCY and apply mean on # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('mean').reset_index()
+Aggregation,group the data by AGENCY and get sum of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('sum').reset_index()
+Aggregation,min Level per biz title,Business Title,Level,df.groupby('Business Title')['Level'].agg('min').reset_index()
+Aggregation,group the data by biz title and get max of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('max').reset_index()
+Aggregation,aggregate # Of Positions by civil title using max,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('max').reset_index()
+Aggregation,group civil title and apply median on # Of Positions,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('median').reset_index()
+Aggregation,count Job ID per title class,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('count').reset_index()
+Aggregation,group title code no and apply median on Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('median').reset_index()
+Aggregation,group the data by tcode and get count of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('count').reset_index()
+Aggregation,count Level based on tile code,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('count').reset_index()
+Aggregation,sum # Of Positions by agency,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('sum').reset_index()
+Aggregation,median Level by Job Id,Job ID,Level,df.groupby('Job ID')['Level'].agg('median').reset_index()
+Aggregation,count Level per official title,Business Title,Level,df.groupby('Business Title')['Level'].agg('count').reset_index()
+Aggregation,organize by service title and get sum of # Of Positions,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('sum').reset_index()
+Aggregation,categorized by tile code and get mean of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('mean').reset_index()
+Aggregation,split by agcy and get min of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('min').reset_index()
+Aggregation,min Level wise title code,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('min').reset_index()
+Aggregation,group by organisation and get max of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('max').reset_index()
+Aggregation,sum Level grpby title of job,Business Title,Level,df.groupby('Business Title')['Level'].agg('sum').reset_index()
+Aggregation,max Job ID per title classfn,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('max').reset_index()
+Aggregation,sum Level grp biz title,Business Title,Level,df.groupby('Business Title')['Level'].agg('sum').reset_index()
+Aggregation,organize by title and get count of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('count').reset_index()
+Aggregation,bucket by titlecode number and get median of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('median').reset_index()
+Aggregation,partition by business title and get count of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('count').reset_index()
+Aggregation,count Level by JOB ID,Job ID,Level,df.groupby('Job ID')['Level'].agg('count').reset_index()
+Aggregation,std Level grpby tcode,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,max # Of Positions based on service title,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('max').reset_index()
+Aggregation,partition by classification and get mean of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('mean').reset_index()
+Aggregation,groub by title classfn and get std of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('std').reset_index()
+Aggregation,max Job ID grpby PostingType,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('max').reset_index()
+Aggregation,group by job id and get max of Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('max').reset_index()
+Aggregation,max Job ID grp posting type,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('max').reset_index()
+Aggregation,groub by classification and get mean of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('mean').reset_index()
+Aggregation,organize by posting and get median of Job ID,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('median').reset_index()
+Aggregation,split by tcode and get std of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,mean Level wise job identifier,Job ID,Level,df.groupby('Job ID')['Level'].agg('mean').reset_index()
+Aggregation,grup by biz title and get max of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('max').reset_index()
+Aggregation,split by biz title and get median of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('median').reset_index()
+Aggregation,categorized by title_code and get std of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,count Level on the basis of job id,Job ID,Level,df.groupby('Job ID')['Level'].agg('count').reset_index()
+Aggregation,partition by classification and get min of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('min').reset_index()
+Aggregation,categorized by agency and get std of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('std').reset_index()
+Aggregation,cluster by agcy and get std of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('std').reset_index()
+Aggregation,grup by agency and get mean of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('mean').reset_index()
+Aggregation,categorized by title and get std of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('std').reset_index()
+Aggregation,categorized by AGENCY and get std of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('std').reset_index()
+Aggregation,partition by title class and get mean of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('mean').reset_index()
+Aggregation,std Level based on job id,Job ID,Level,df.groupby('Job ID')['Level'].agg('std').reset_index()
+Aggregation,partition by AGENCY and get min of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('min').reset_index()
+Aggregation,std Level by job identifier,Job ID,Level,df.groupby('Job ID')['Level'].agg('std').reset_index()
+Aggregation,max Level grp title of job,Business Title,Level,df.groupby('Business Title')['Level'].agg('max').reset_index()
+Aggregation,groub by agcy and get min of # Of Positions,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('min').reset_index()
+Aggregation,partition by title of job and get max of Level,Business Title,Level,df.groupby('Business Title')['Level'].agg('max').reset_index()
+Aggregation,groop by title classfn and get mean of Job ID,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('mean').reset_index()
+Aggregation,groub by post type and get median of Job ID,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('median').reset_index()
+Aggregation,organize by job id and get mean of Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('mean').reset_index()
+Aggregation,std Level based on job id,Job ID,Level,df.groupby('Job ID')['Level'].agg('std').reset_index()
+Aggregation,max # Of Positions based on agency,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('max').reset_index()
+Aggregation,split by Job Id and get mean of Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('mean').reset_index()
+Aggregation,count # Of Positions grpby service title,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('count').reset_index()
+Aggregation,partition by PostingType and get sum of Job ID,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('sum').reset_index()
+Aggregation,group by job identifier and get mean of Level,Job ID,Level,df.groupby('Job ID')['Level'].agg('mean').reset_index()
+Aggregation,split by posting and get std of Job ID,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('std').reset_index()
+Aggregation,partition by tile code and get sum of Level,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('sum').reset_index()
+Aggregation,i want to see it group organisation,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,can you grp type of post?,Posting Type,,df.groupby('Posting Type').first().reset_index()
+Aggregation,i want to see it by title of job,Business Title,,df.groupby('Business Title').first().reset_index()
+Aggregation,grpby organisation,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,i want to see it based on title,Business Title,,df.groupby('Business Title').first().reset_index()
+Aggregation,show data by AGENCY,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,show data categorize by PostingType,Posting Type,,df.groupby('Posting Type').first().reset_index()
+Aggregation,grp biz title,Business Title,,df.groupby('Business Title').first().reset_index()
+Aggregation,can you organize by AGENCY?,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,categorize by cst,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,cluster by Agency,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,i want to see it grp cst,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,i want to see it grpby biz title,Business Title,,df.groupby('Business Title').first().reset_index()
+Aggregation,based on service title,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,can you cluster by govt title?,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,show data organize by title code no,Title Code No,,df.groupby('Title Code No').first().reset_index()
+Aggregation,can you grouped by j o b i d?,Job ID,,df.groupby('Job ID').first().reset_index()
+Aggregation,grouped by AGENCY,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,can you split by agcy?,Agency,,df.groupby('Agency').first().reset_index()
+Aggregation,show data by govt title,Civil Service Title,,df.groupby('Civil Service Title').first().reset_index()
+Aggregation,Could you group the data by title code and show the mean of Level?,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('mean').reset_index()
+Aggregation,I'd like to know the count of Job ID by title classification.,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('count').reset_index()
+Aggregation,How many # Of Positions values are there per civil title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('mean').reset_index()
+Aggregation,Which title code no has the highest Level std?,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,Can you show me the max # Of Positions grouped by service title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('max').reset_index()
+Aggregation,What’s the min of # Of Positions in each AGENCY group?,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('min').reset_index()
+Aggregation,List count # Of Positions per civil service.,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('count').reset_index()
+Aggregation,Can you show me the mean Level grouped by tile code?,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('mean').reset_index()
+Aggregation,List sum # Of Positions per Agency.,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('sum').reset_index()
+Aggregation,Could you group the data by Agency and show the count of # Of Positions?,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('count').reset_index()
+Aggregation,Which service title has the highest # Of Positions std?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('std').reset_index()
+Aggregation,I'd like to know the min of Level by business title.,Business Title,Level,df.groupby('Business Title')['Level'].agg('min').reset_index()
+Aggregation,Which title classfn has the highest Job ID count?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('count').reset_index()
+Aggregation,Could you group the data by biz title and show the count of Level?,Business Title,Level,df.groupby('Business Title')['Level'].agg('count').reset_index()
+Aggregation,Which j o b i d has the highest Level min?,Job ID,Level,df.groupby('Job ID')['Level'].agg('min').reset_index()
+Aggregation,List std Level per official title.,Business Title,Level,df.groupby('Business Title')['Level'].agg('std').reset_index()
+Aggregation,Give me the std of # Of Positions for every cst.,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('std').reset_index()
+Aggregation,How is Job ID distributed across title classfn?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('std').reset_index()
+Aggregation,Which business title has the highest Level sum?,Business Title,Level,df.groupby('Business Title')['Level'].agg('sum').reset_index()
+Aggregation,Could you group the data by title class and show the sum of Job ID?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('sum').reset_index()
+Aggregation,How is Job ID distributed across title classfn?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('count').reset_index()
+Aggregation,What’s the count of Level in each j o b i d group?,Job ID,Level,df.groupby('Job ID')['Level'].agg('count').reset_index()
+Aggregation,How many Job ID values are there per title classification?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('sum').reset_index()
+Aggregation,How many # Of Positions values are there per civil title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('count').reset_index()
+Aggregation,Can you show me the min # Of Positions grouped by civil title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('min').reset_index()
+Aggregation,How does the Level vary across job id?,Job ID,Level,df.groupby('Job ID')['Level'].agg('std').reset_index()
+Aggregation,Show the spread of Job ID by classification.,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('std').reset_index()
+Aggregation,What’s the variation in # Of Positions per civil title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('mean').reset_index()
+Aggregation,Tell me the spread of Level across different title code no.,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,What is the variability of # Of Positions grouped by civil service?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('std').reset_index()
+Aggregation,What is the variability of Level grouped by title code?,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,What is the variability of # Of Positions grouped by service title?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('std').reset_index()
+Aggregation,Tell me the spread of # Of Positions across different govt title.,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('std').reset_index()
+Aggregation,Check how Job ID changes across type of post.,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('mean').reset_index()
+Aggregation,What's the range of # Of Positions for each AGENCY?,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('max').reset_index()
+Aggregation,Give the scattered values of Level by jobid.,Job ID,Level,df.groupby('Job ID')['Level'].agg('count').reset_index()
+Aggregation,How is Job ID scattered over type of post?,Posting Type,Job ID,df.groupby('Posting Type')['Job ID'].agg('count').reset_index()
+Aggregation,How does the Level vary across title_code?,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('std').reset_index()
+Aggregation,Give the scattered values of Level by title.,Business Title,Level,df.groupby('Business Title')['Level'].agg('count').reset_index()
+Aggregation,How does the Job ID vary across title classfn?,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('std').reset_index()
+Aggregation,What's the range of Level for each tcode?,Title Code No,Level,df.groupby('Title Code No')['Level'].agg('max').reset_index()
+Aggregation,What’s the variation in # Of Positions per agcy?,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('mean').reset_index()
+Aggregation,Check how Job ID changes across title classfn.,Title Classification,Job ID,df.groupby('Title Classification')['Job ID'].agg('mean').reset_index()
+Aggregation,What’s the variation in # Of Positions per civil service?,Civil Service Title,# Of Positions,df.groupby('Civil Service Title')['# Of Positions'].agg('mean').reset_index()
+Aggregation,Can you show the distribution of # Of Positions across agcy?,Agency,# Of Positions,df.groupby('Agency')['# Of Positions'].agg('count').reset_index()
+Sorting & Ranking,Show customers in increasing order of revenue.,customers,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,Display employees in order of decreasing units_sold.,employees,units_sold,"df.sort_values(by='units_sold', ascending=False)"
+Sorting & Ranking,Get the highest sales values for each employees.,employees,sales,"df.sort_values(by='sales', ascending=False)"
 Sorting & Ranking,Find top 3 stores with highest rating.,stores,rating,"df.sort_values(by='rating', ascending=False).head(3)"
-Sorting & Ranking,Get the highest sales values for each departments.,departments,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,Get the highest sales values for each departments.,departments,sales,"df.sort_values(by='sales', ascending=False)"
 Sorting & Ranking,Find top 3 departments with highest units_sold.,departments,units_sold,"df.sort_values(by='units_sold', ascending=False).head(3)"
-Sorting & Ranking,List the lowest revenue values grouped by stores.,stores,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
-Sorting & Ranking,Show customers in increasing order of profit.,customers,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,List the lowest revenue values grouped by stores.,stores,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,Show customers in increasing order of profit.,customers,profit,"df.sort_values(by='profit', ascending=True)"
 Sorting & Ranking,Rank departments by units_sold.,departments,units_sold,df['units_sold_rank'] = df['units_sold'].rank(ascending=False)
-Sorting & Ranking,Get the highest profit values for each stores.,stores,profit,"df.sort_values(by='profit', ascending=False).head(5)"
+Sorting & Ranking,Get the highest profit values for each stores.,stores,profit,"df.sort_values(by='profit', ascending=False)"
 Sorting & Ranking,Rank employees by expenses.,employees,expenses,df['expenses_rank'] = df['expenses'].rank(ascending=False)
 Sorting & Ranking,Show customers sorted by profit ascending.,customers,profit,"df.sort_values(by='profit', ascending=True)"
 Sorting & Ranking,Show stores sorted by sales ascending.,stores,sales,"df.sort_values(by='sales', ascending=True)"
 Sorting & Ranking,Rank stores by expenses.,stores,expenses,df['expenses_rank'] = df['expenses'].rank(ascending=False)
-Sorting & Ranking,Display stores in order of decreasing expenses.,stores,expenses,"df.sort_values(by='expenses', ascending=False).head(5)"
+Sorting & Ranking,Display stores in order of decreasing expenses.,stores,expenses,"df.sort_values(by='expenses', ascending=False)"
 Sorting & Ranking,Get bottom 10 stores based on sales.,stores,sales,"df.sort_values(by='sales', ascending=True).head(10)"
 Sorting & Ranking,Get bottom 10 customers based on units_sold.,customers,units_sold,"df.sort_values(by='units_sold', ascending=True).head(10)"
 Sorting & Ranking,Rank products by profit.,products,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
@@ -121,10 +367,10 @@ Sorting & Ranking,Sort customers by profit in descending order.,customers,profit
 Sorting & Ranking,List top 5 employees by profit.,employees,profit,"df.sort_values(by='profit', ascending=False).head(5)"
 Sorting & Ranking,Get bottom 10 products based on profit.,products,profit,"df.sort_values(by='profit', ascending=True).head(10)"
 Sorting & Ranking,Find top 3 departments with highest units_sold.,departments,units_sold,"df.sort_values(by='units_sold', ascending=False).head(3)"
-Sorting & Ranking,Display products in order of decreasing rating.,products,rating,"df.sort_values(by='rating', ascending=False).head(5)"
-Sorting & Ranking,Get the highest rating values for each stores.,stores,rating,"df.sort_values(by='rating', ascending=False).head(5)"
-Sorting & Ranking,Show customers in increasing order of sales.,customers,sales,"df.sort_values(by='sales', ascending=True).head(10)"
-Sorting & Ranking,List the lowest revenue values grouped by products.,products,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Display products in order of decreasing rating.,products,rating,"df.sort_values(by='rating', ascending=False)"
+Sorting & Ranking,Get the highest rating values for each stores.,stores,rating,"df.sort_values(by='rating', ascending=False)"
+Sorting & Ranking,Show customers in increasing order of sales.,customers,sales,"df.sort_values(by='sales', ascending=True)"
+Sorting & Ranking,List the lowest revenue values grouped by products.,products,revenue,"df.sort_values(by='revenue', ascending=True)"
 Sorting & Ranking,Find top 3 employees with highest expenses.,employees,expenses,"df.sort_values(by='expenses', ascending=False).head(3)"
 Sorting & Ranking,Sort stores by sales in descending order.,stores,sales,"df.sort_values(by='sales', ascending=False)"
 Sorting & Ranking,Sort stores by revenue in descending order.,stores,revenue,"df.sort_values(by='revenue', ascending=False)"
@@ -132,26 +378,26 @@ Sorting & Ranking,Find top 3 products with highest sales.,products,sales,"df.sor
 Sorting & Ranking,Rank products by rating.,products,rating,df['rating_rank'] = df['rating'].rank(ascending=False)
 Sorting & Ranking,Rank departments by profit.,departments,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
 Sorting & Ranking,Get bottom 10 employees based on units_sold.,employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(10)"
-Sorting & Ranking,Display customers in order of decreasing expenses.,customers,expenses,"df.sort_values(by='expenses', ascending=False).head(5)"
+Sorting & Ranking,Display customers in order of decreasing expenses.,customers,expenses,"df.sort_values(by='expenses', ascending=False)"
 Sorting & Ranking,Get bottom 10 employees based on revenue.,employees,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
 Sorting & Ranking,Sort customers by profit in descending order.,customers,profit,"df.sort_values(by='profit', ascending=False)"
-Sorting & Ranking,List the lowest profit values grouped by employees.,employees,profit,"df.sort_values(by='profit', ascending=True).head(10)"
-Sorting & Ranking,List the lowest revenue values grouped by employees.,employees,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
-Sorting & Ranking,Show departments in increasing order of profit.,departments,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,List the lowest profit values grouped by employees.,employees,profit,"df.sort_values(by='profit', ascending=True)"
+Sorting & Ranking,List the lowest revenue values grouped by employees.,employees,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,Show departments in increasing order of profit.,departments,profit,"df.sort_values(by='profit', ascending=True)"
 Sorting & Ranking,Find top 3 products with highest profit.,products,profit,"df.sort_values(by='profit', ascending=False).head(3)"
 Sorting & Ranking,Find top 3 customers with highest revenue.,customers,revenue,"df.sort_values(by='revenue', ascending=False).head(3)"
 Sorting & Ranking,Sort stores by rating in descending order.,stores,rating,"df.sort_values(by='rating', ascending=False)"
-Sorting & Ranking,List the lowest expenses values grouped by departments.,departments,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
-Sorting & Ranking,Display departments in order of decreasing profit.,departments,profit,"df.sort_values(by='profit', ascending=False).head(5)"
+Sorting & Ranking,List the lowest expenses values grouped by departments.,departments,expenses,"df.sort_values(by='expenses', ascending=True)"
+Sorting & Ranking,Display departments in order of decreasing profit.,departments,profit,"df.sort_values(by='profit', ascending=False)"
 Sorting & Ranking,Find top 3 employees with highest profit.,employees,profit,"df.sort_values(by='profit', ascending=False).head(3)"
-Sorting & Ranking,Show products in increasing order of revenue.,products,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
-Sorting & Ranking,Display customers in order of decreasing rating.,customers,rating,"df.sort_values(by='rating', ascending=False).head(5)"
-Sorting & Ranking,List the lowest expenses values grouped by departments.,departments,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Show products in increasing order of revenue.,products,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,Display customers in order of decreasing rating.,customers,rating,"df.sort_values(by='rating', ascending=False)"
+Sorting & Ranking,List the lowest expenses values grouped by departments.,departments,expenses,"df.sort_values(by='expenses', ascending=True)"
 Sorting & Ranking,Find top 3 products with highest expenses.,products,expenses,"df.sort_values(by='expenses', ascending=False).head(3)"
-Sorting & Ranking,Display departments in order of decreasing sales.,departments,sales,"df.sort_values(by='sales', ascending=False).head(5)"
-Sorting & Ranking,List the lowest units_sold values grouped by products.,products,units_sold,"df.sort_values(by='units_sold', ascending=True).head(10)"
-Sorting & Ranking,Show departments in increasing order of revenue.,departments,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
-Sorting & Ranking,List the lowest revenue values grouped by departments.,departments,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,Display departments in order of decreasing sales.,departments,sales,"df.sort_values(by='sales', ascending=False)"
+Sorting & Ranking,List the lowest units_sold values grouped by products.,products,units_sold,"df.sort_values(by='units_sold', ascending=True)"
+Sorting & Ranking,Show departments in increasing order of revenue.,departments,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,List the lowest revenue values grouped by departments.,departments,revenue,"df.sort_values(by='revenue', ascending=True)"
 Sorting & Ranking,Show customers sorted by rating ascending.,customers,rating,"df.sort_values(by='rating', ascending=True)"
 Sorting & Ranking,Get bottom 10 products based on expenses.,products,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
 Sorting & Ranking,List top 5 departments by profit.,departments,profit,"df.sort_values(by='profit', ascending=False).head(5)"
@@ -161,18 +407,18 @@ Sorting & Ranking,Rank stores by revenue.,stores,revenue,df['revenue_rank'] = df
 Sorting & Ranking,Show employees sorted by units_sold ascending.,employees,units_sold,"df.sort_values(by='units_sold', ascending=True)"
 Sorting & Ranking,Rank customers by units_sold.,customers,units_sold,df['units_sold_rank'] = df['units_sold'].rank(ascending=False)
 Sorting & Ranking,Find top 3 employees with highest rating.,employees,rating,"df.sort_values(by='rating', ascending=False).head(3)"
-Sorting & Ranking,Show departments in increasing order of expenses.,departments,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Show departments in increasing order of expenses.,departments,expenses,"df.sort_values(by='expenses', ascending=True)"
 Sorting & Ranking,Rank products by profit.,products,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
 Sorting & Ranking,Sort employees by revenue in descending order.,employees,revenue,"df.sort_values(by='revenue', ascending=False)"
-Sorting & Ranking,Display customers in order of decreasing rating.,customers,rating,"df.sort_values(by='rating', ascending=False).head(5)"
+Sorting & Ranking,Display customers in order of decreasing rating.,customers,rating,"df.sort_values(by='rating', ascending=False)"
 Sorting & Ranking,Sort stores by sales in descending order.,stores,sales,"df.sort_values(by='sales', ascending=False)"
 Sorting & Ranking,Find top 3 customers with highest sales.,customers,sales,"df.sort_values(by='sales', ascending=False).head(3)"
-Sorting & Ranking,Show departments in increasing order of expenses.,departments,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Show departments in increasing order of expenses.,departments,expenses,"df.sort_values(by='expenses', ascending=True)"
 Sorting & Ranking,Find top 3 customers with highest profit.,customers,profit,"df.sort_values(by='profit', ascending=False).head(3)"
 Sorting & Ranking,Rank products by expenses.,products,expenses,df['expenses_rank'] = df['expenses'].rank(ascending=False)
 Sorting & Ranking,Show stores sorted by sales ascending.,stores,sales,"df.sort_values(by='sales', ascending=True)"
-Sorting & Ranking,List the lowest rating values grouped by customers.,customers,rating,"df.sort_values(by='rating', ascending=True).head(10)"
-Sorting & Ranking,List the lowest expenses values grouped by employees.,employees,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,List the lowest rating values grouped by customers.,customers,rating,"df.sort_values(by='rating', ascending=True)"
+Sorting & Ranking,List the lowest expenses values grouped by employees.,employees,expenses,"df.sort_values(by='expenses', ascending=True)"
 Sorting & Ranking,Sort stores by expenses in descending order.,stores,expenses,"df.sort_values(by='expenses', ascending=False)"
 Sorting & Ranking,Find top 3 stores with highest sales.,stores,sales,"df.sort_values(by='sales', ascending=False).head(3)"
 Sorting & Ranking,Get bottom 10 products based on sales.,products,sales,"df.sort_values(by='sales', ascending=True).head(10)"
@@ -180,25 +426,165 @@ Sorting & Ranking,Find top 2 stores with highest sales.,stores,sales,"df.sort_va
 Sorting & Ranking,Sort employees by units_sold in descending order.,employees,units_sold,"df.sort_values(by='units_sold', ascending=False)"
 Sorting & Ranking,Get bottom 10 stores based on profit.,stores,profit,"df.sort_values(by='profit', ascending=True).head(10)"
 Sorting & Ranking,Rank customers by profit.,customers,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
-Sorting & Ranking,List the lowest profit values grouped by employees.,employees,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,List the lowest profit values grouped by employees.,employees,profit,"df.sort_values(by='profit', ascending=True)"
 Sorting & Ranking,Sort stores by units_sold in descending order.,stores,units_sold,"df.sort_values(by='units_sold', ascending=False)"
-Sorting & Ranking,Display departments in order of decreasing sales.,departments,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,Display departments in order of decreasing sales.,departments,sales,"df.sort_values(by='sales', ascending=False)"
 Sorting & Ranking,Rank employees by profit.,employees,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
-Sorting & Ranking,Show employees in increasing order of rating.,employees,rating,"df.sort_values(by='rating', ascending=True).head(10)"
+Sorting & Ranking,Show employees in increasing order of rating.,employees,rating,"df.sort_values(by='rating', ascending=True)"
 Sorting & Ranking,Sort departments by units_sold in descending order.,departments,units_sold,"df.sort_values(by='units_sold', ascending=False)"
 Sorting & Ranking,Rank products by profit.,products,profit,df['profit_rank'] = df['profit'].rank(ascending=False)
 Sorting & Ranking,Find top 2 employees with highest sales.,employees,sales,"df.sort_values(by='sales', ascending=False).head(2)"
-Sorting & Ranking,Show products in increasing order of expenses.,products,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
+Sorting & Ranking,Show products in increasing order of expenses.,products,expenses,"df.sort_values(by='expenses', ascending=True)"
 Sorting & Ranking,Show customers sorted by sales ascending.,customers,sales,"df.sort_values(by='sales', ascending=True)"
 Sorting & Ranking,List top 5 departments by revenue.,departments,revenue,"df.sort_values(by='revenue', ascending=False).head(5)"
 Sorting & Ranking,Get bottom 10 customers based on revenue.,customers,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
 Sorting & Ranking,Sort customers by revenue in descending order.,customers,revenue,"df.sort_values(by='revenue', ascending=False)"
-Sorting & Ranking,List the lowest revenue values grouped by employees.,employees,revenue,"df.sort_values(by='revenue', ascending=True).head(10)"
+Sorting & Ranking,List the lowest revenue values grouped by employees.,employees,revenue,"df.sort_values(by='revenue', ascending=True)"
 Sorting & Ranking,Rank employees by units_sold.,employees,units_sold,df['units_sold_rank'] = df['units_sold'].rank(ascending=False)
 Sorting & Ranking,List top 5 departments by revenue.,departments,revenue,"df.sort_values(by='revenue', ascending=False).head(5)"
 Sorting & Ranking,Get bottom 10 customers based on rating.,customers,rating,"df.sort_values(by='rating', ascending=True).head(10)"
 Sorting & Ranking,Get bottom 10 products based on expenses.,products,expenses,"df.sort_values(by='expenses', ascending=True).head(10)"
 Sorting & Ranking,List top 5 employees by sales.,employees,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,10 customers with most revenue,customers,revenue,"df.sort_values(by='revenue', ascending=False).head(10)"
+Sorting & Ranking,stores sorted top by profit,stores,profit,"df.sort_values(by='profit', ascending=False)"
+Sorting & Ranking,show top 20 products by ratings,products,ratings,"df.sort_values(by='ratings', ascending=True).head(20)"
+Sorting & Ranking,list 10 stores having low to high profit,stores,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,categories sorted least by orders,categories,orders,"df.sort_values(by='orders', ascending=True)"
+Sorting & Ranking,get top 20 customers increasing revenue,customers,revenue,"df.sort_values(by='revenue', ascending=True).head(20)"
+Sorting & Ranking,list 5 categories having decreasing orders,categories,orders,"df.sort_values(by='orders', ascending=False).head(5)"
+Sorting & Ranking,show top 20 customers by revenue,customers,revenue,"df.sort_values(by='revenue', ascending=False).head(20)"
+Sorting & Ranking,get top 10 stores bottom profit,stores,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,organize products by ratings (least),products,ratings,"df.sort_values(by='ratings', ascending=True)"
+Sorting & Ranking,list 20 employees having increasing sales,employees,sales,"df.sort_values(by='sales', ascending=True).head(20)"
+Sorting & Ranking,sort categories by orders in bottom order,categories,orders,"df.sort_values(by='orders', ascending=True)"
+Sorting & Ranking,arrange all stores according to most profit,stores,profit,"df.sort_values(by='profit', ascending=False)"
+Sorting & Ranking,get top 3 products greatest ratings,products,ratings,"df.sort_values(by='ratings', ascending=False).head(3)"
+Sorting & Ranking,get top 20 customers highest revenue,customers,revenue,"df.sort_values(by='revenue', ascending=False).head(20)"
+Sorting & Ranking,customers sorted most by revenue,customers,revenue,"df.sort_values(by='revenue', ascending=False)"
+Sorting & Ranking,categories sorted bottom by orders,categories,orders,"df.sort_values(by='orders', ascending=True)"
+Sorting & Ranking,employees sorted most by sales,employees,sales,"df.sort_values(by='sales', ascending=False)"
+Sorting & Ranking,employees sorted low to high by units_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=True)"
+Sorting & Ranking,show top 20 products by ratings,products,ratings,"df.sort_values(by='ratings', ascending=False).head(20)"
+Sorting & Ranking,3 employees with greatest sales,employees,sales,"df.sort_values(by='sales', ascending=False).head(3)"
+Sorting & Ranking,customers sorted bottom by revenue,customers,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,5 employees with greatest sales,employees,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,show top 5 employees by sales,employees,sales,"df.sort_values(by='sales', ascending=True).head(5)"
+Sorting & Ranking,organize products by ratings (bottom),products,ratings,"df.sort_values(by='ratings', ascending=True)"
+Sorting & Ranking,categories sorted ascending by orders,categories,orders,"df.sort_values(by='orders', ascending=True)"
+Sorting & Ranking,categories sorted top by orders,categories,orders,"df.sort_values(by='orders', ascending=False)"
+Sorting & Ranking,show top 10 employees by sales,employees,sales,"df.sort_values(by='sales', ascending=False).head(10)"
+Sorting & Ranking,customers sorted descending by revenue,customers,revenue,"df.sort_values(by='revenue', ascending=False)"
+Sorting & Ranking,arrange all customers according to low to high revenue,customers,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,get top 10 categories bottom orders,categories,orders,"df.sort_values(by='orders', ascending=True).head(10)"
+Sorting & Ranking,order stores based on profit (least),stores,profit,"df.sort_values(by='profit', ascending=True)"
+Sorting & Ranking,order products based on ratings (greatest),products,ratings,"df.sort_values(by='ratings', ascending=False)"
+Sorting & Ranking,3 employees with least units_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(3)"
+Sorting & Ranking,get top 5 employees decreasing units_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=False).head(5)"
+Sorting & Ranking,organize stores by profit (bottom),stores,profit,"df.sort_values(by='profit', ascending=True)"
+Sorting & Ranking,sort stores by profit in least order,stores,profit,"df.sort_values(by='profit', ascending=True)"
+Sorting & Ranking,arrange all stores according to high to low profit,stores,profit,"df.sort_values(by='profit', ascending=False)"
+Sorting & Ranking,organize employees by units_sold (greatest),employees,units_sold,"df.sort_values(by='units_sold', ascending=False)"
+Sorting & Ranking,sort categories by orders in most order,categories,orders,"df.sort_values(by='orders', ascending=False)"
+Sorting & Ranking,get top 5 employees top sales,employees,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,order products based on ratings (most),products,ratings,"df.sort_values(by='ratings', ascending=False)"
+Sorting & Ranking,organize products by ratings (increasing),products,ratings,"df.sort_values(by='ratings', ascending=True)"
+Sorting & Ranking,order categories based on orders (descending),categories,orders,"df.sort_values(by='orders', ascending=False)"
+Sorting & Ranking,list 5 employees having least sales,employees,sales,"df.sort_values(by='sales', ascending=True).head(5)"
+Sorting & Ranking,arrange all employees according to decreasing units_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=False)"
+Sorting & Ranking,get top 20 employees highest sales,employees,sales,"df.sort_values(by='sales', ascending=False).head(20)"
+Sorting & Ranking,display 3 stores sorted by profit (ascending),stores,profit,"df.sort_values(by='profit', ascending=True).head(3)"
+Sorting & Ranking,arrange all customers according to low to high revenue,customers,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,employees sorted least by sales,employees,sales,"df.sort_values(by='sales', ascending=True)"
+Sorting & Ranking,10 customrs with most Revenue,customers,revenue,"df.sort_values(by='revenue', ascending=False).head(10)"
+Sorting & Ranking,STORES sorted top by Profitt,stores,profit,"df.sort_values(by='profit', ascending=False)"
+Sorting & Ranking,show top 20 PRODUCTS by RATINGS,products,ratings,"df.sort_values(by='ratings', ascending=True).head(20)"
+Sorting & Ranking,list 10 Storez having low to high PROFIT,stores,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,categores sorted least by ORDERS,categories,orders,"df.sort_values(by='orders', ascending=True)"
+Sorting & Ranking,get top 20 customrs increasing REVENUE,customers,revenue,"df.sort_values(by='revenue', ascending=True).head(20)"
+Sorting & Ranking,list 5 categores having decreasing odders,categories,orders,"df.sort_values(by='orders', ascending=False).head(5)"
+Sorting & Ranking,show top 20 customrs by REVENUE,customers,revenue,"df.sort_values(by='revenue', ascending=False).head(20)"
+Sorting & Ranking,get top 10 Storez bottom proffit,stores,profit,"df.sort_values(by='profit', ascending=True).head(10)"
+Sorting & Ranking,organize productz by raatings (least),products,ratings,"df.sort_values(by='ratings', ascending=True)"
+Sorting & Ranking,list 20 empoyees having increasing sails,employees,sales,"df.sort_values(by='sales', ascending=True).head(20)"
+Sorting & Ranking,sort CategorieS by Orderz in bottom order,categories,orders,"df.sort_values(by='orders', ascending=True)"
+Sorting & Ranking,arrange all stoers according to most PROFIT,stores,profit,"df.sort_values(by='profit', ascending=False)"
+Sorting & Ranking,get top 3 PRODUCTS greatest RATINGS,products,ratings,"df.sort_values(by='ratings', ascending=False).head(3)"
+Sorting & Ranking,get top 20 custmers highest Revenue,customers,revenue,"df.sort_values(by='revenue', ascending=False).head(20)"
+Sorting & Ranking,CustomerS sorted most by reveneu,customers,revenue,"df.sort_values(by='revenue', ascending=False)"
+Sorting & Ranking,CategorieS sorted bottom by ORDERS,categories,orders,"df.sort_values(by='orders', ascending=True)"
+Sorting & Ranking,empoyees sorted most by Sells,employees,sales,"df.sort_values(by='sales', ascending=False)"
+Sorting & Ranking,EMPLoyees sorted low to high by unit_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=True)"
+Sorting & Ranking,show top 20 PRODUCTS by ratingz,products,ratings,"df.sort_values(by='ratings', ascending=False).head(20)"
+Sorting & Ranking,3 empoyees with greatest sails,employees,sales,"df.sort_values(by='sales', ascending=False).head(3)"
+Sorting & Ranking,customrs sorted bottom by Revenue,customers,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,5 empoyees with greatest SALES,employees,sales,"df.sort_values(by='sales', ascending=False).head(5)"
+Sorting & Ranking,show top 5 EMPLoyees by SALES,employees,sales,"df.sort_values(by='sales', ascending=True).head(5)"
+Sorting & Ranking,organize PRODUCTS by RATINGS (bottom),products,ratings,"df.sort_values(by='ratings', ascending=True)"
+Sorting & Ranking,categores sorted ascending by odders,categories,orders,"df.sort_values(by='orders', ascending=True)"
+Sorting & Ranking,categoriess sorted top by ORDERS,categories,orders,"df.sort_values(by='orders', ascending=False)"
+Sorting & Ranking,show top 10 empoyees by Sells,employees,sales,"df.sort_values(by='sales', ascending=False).head(10)"
+Sorting & Ranking,CustomerS sorted descending by REVENUE,customers,revenue,"df.sort_values(by='revenue', ascending=False)"
+Sorting & Ranking,arrange all custmers according to low to high reveneu,customers,revenue,"df.sort_values(by='revenue', ascending=True)"
+Sorting & Ranking,show top eight categories by orders,categories,orders,"df.sort_values(by='orders', ascending=True).head(8)"
+Sorting & Ranking,list two stores having most profit,stores,profit,"df.sort_values(by='profit', ascending=False).head(2)"
+Sorting & Ranking,show top two employees by units_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(2)"
+Sorting & Ranking,three employees with bottom units_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(3)"
+Sorting & Ranking,list three employees having greatest units_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=False).head(3)"
+Sorting & Ranking,display five employees sorted by units_sold (increasing),employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(5)"
+Sorting & Ranking,display fifty employees sorted by units_sold (increasing),employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(50)"
+Sorting & Ranking,eight employees with smallest units_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(8)"
+Sorting & Ranking,list four employees having least sales,employees,sales,"df.sort_values(by='sales', ascending=True).head(4)"
+Sorting & Ranking,display nine categories sorted by orders (increasing),categories,orders,"df.sort_values(by='orders', ascending=True).head(9)"
+Sorting & Ranking,display twenty products sorted by ratings (decreasing),products,ratings,"df.sort_values(by='ratings', ascending=False).head(20)"
+Sorting & Ranking,display six employees sorted by sales (bottom),employees,sales,"df.sort_values(by='sales', ascending=True).head(6)"
+Sorting & Ranking,display thirty employees sorted by units_sold (increasing),employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(30)"
+Sorting & Ranking,five products with low to high ratings,products,ratings,"df.sort_values(by='ratings', ascending=True).head(5)"
+Sorting & Ranking,get top seven categories most orders,categories,orders,"df.sort_values(by='orders', ascending=False).head(7)"
+Sorting & Ranking,show top twenty employees by units_sold,employees,units_sold,"df.sort_values(by='units_sold', ascending=False).head(20)"
+Sorting & Ranking,display fifty employees sorted by units_sold (bottom),employees,units_sold,"df.sort_values(by='units_sold', ascending=True).head(50)"
+Sorting & Ranking,list seven employees having ascending sales,employees,sales,"df.sort_values(by='sales', ascending=True).head(7)"
+Sorting & Ranking,get top four products least ratings,products,ratings,"df.sort_values(by='ratings', ascending=True).head(4)"
+Sorting & Ranking,show top six stores by profit,stores,profit,"df.sort_values(by='profit', ascending=False).head(6)"
+Sorting & Ranking,display six entries sorted by Posting Updated (highest),jobs,Posting Updated,"df.sort_values(by='Posting Updated', ascending=False).head(6)"
+Sorting & Ranking,sort jobs by Title Classification in low to high order,jobs,Title Classification,"df.sort_values(by='Title Classification', ascending=True)"
+Sorting & Ranking,list three jobs with highest Title Classification,jobs,Title Classification,"df.sort_values(by='Title Classification', ascending=False).head(3)"
+Sorting & Ranking,arrange job entries according to highest Division/Work Unit,jobs,Division/Work Unit,"df.sort_values(by='Division/Work Unit', ascending=False)"
+Sorting & Ranking,arrange job entries according to decreasing Full-Time/Part-Time indicator,jobs,Full-Time/Part-Time indicator,"df.sort_values(by='Full-Time/Part-Time indicator', ascending=False)"
+Sorting & Ranking,display nine entries sorted by Residency Requirement (highest),jobs,Residency Requirement,"df.sort_values(by='Residency Requirement', ascending=False).head(9)"
+Sorting & Ranking,display five entries sorted by Posting Date (low to high),jobs,Posting Date,"df.sort_values(by='Posting Date', ascending=True).head(5)"
+Sorting & Ranking,organize postings by Post Until descending,jobs,Post Until,"df.sort_values(by='Post Until', ascending=False)"
+Sorting & Ranking,sort jobs by Post Until in top order,jobs,Post Until,"df.sort_values(by='Post Until', ascending=False)"
+Sorting & Ranking,organize postings by Salary Range To increasing,jobs,Salary Range To,"df.sort_values(by='Salary Range To', ascending=True)"
+Sorting & Ranking,display two entries sorted by Division/Work Unit (least),jobs,Division/Work Unit,"df.sort_values(by='Division/Work Unit', ascending=True).head(2)"
+Sorting & Ranking,display eight entries sorted by Posting Date (smallest),jobs,Posting Date,"df.sort_values(by='Posting Date', ascending=True).head(8)"
+Sorting & Ranking,list seven jobs with bottom Salary Range From,jobs,Salary Range From,"df.sort_values(by='Salary Range From', ascending=True).head(7)"
+Sorting & Ranking,display seven entries sorted by Posting Updated (descending),jobs,Posting Updated,"df.sort_values(by='Posting Updated', ascending=False).head(7)"
+Sorting & Ranking,thirty job postings with top Preferred Skills,jobs,Preferred Skills,"df.sort_values(by='Preferred Skills', ascending=False).head(30)"
+Sorting & Ranking,four job postings with increasing Salary Range From,jobs,Salary Range From,"df.sort_values(by='Salary Range From', ascending=True).head(4)"
+Sorting & Ranking,organize postings by Recruitment Contact least,jobs,Recruitment Contact,"df.sort_values(by='Recruitment Contact', ascending=True)"
+Sorting & Ranking,list four jobs with high to low Work Location 1,jobs,Work Location 1,"df.sort_values(by='Work Location 1', ascending=False).head(4)"
+Sorting & Ranking,sort jobs by Salary Range From in highest order,jobs,Salary Range From,"df.sort_values(by='Salary Range From', ascending=False)"
+Sorting & Ranking,list two jobs with most Minimum Qual Requirements,jobs,Minimum Qual Requirements,"df.sort_values(by='Minimum Qual Requirements', ascending=False).head(2)"
+Sorting & Ranking,nine job postings with increasing Job Category,jobs,Job Category,"df.sort_values(by='Job Category', ascending=True).head(9)"
+Sorting & Ranking,sort jobs by To Apply in bottom order,jobs,To Apply,"df.sort_values(by='To Apply', ascending=True)"
+Sorting & Ranking,forty job postings with ascending Recruitment Contact,jobs,Recruitment Contact,"df.sort_values(by='Recruitment Contact', ascending=True).head(40)"
+Sorting & Ranking,display seven entries sorted by Title Classification (greatest),jobs,Title Classification,"df.sort_values(by='Title Classification', ascending=False).head(7)"
+Sorting & Ranking,organize postings by Title Code No most,jobs,Title Code No,"df.sort_values(by='Title Code No', ascending=False)"
+Sorting & Ranking,show top two jobs by Civil Service Title,jobs,Civil Service Title,"df.sort_values(by='Civil Service Title', ascending=False).head(2)"
+Sorting & Ranking,organize postings by Posting Date descending,jobs,Posting Date,"df.sort_values(by='Posting Date', ascending=False)"
+Sorting & Ranking,list ten jobs with top Full-Time/Part-Time indicator,jobs,Full-Time/Part-Time indicator,"df.sort_values(by='Full-Time/Part-Time indicator', ascending=False).head(10)"
+Sorting & Ranking,display four entries sorted by Residency Requirement (descending),jobs,Residency Requirement,"df.sort_values(by='Residency Requirement', ascending=False).head(4)"
+Sorting & Ranking,show top six jobs by Preferred Skills,jobs,Preferred Skills,"df.sort_values(by='Preferred Skills', ascending=True).head(6)"
+Sorting & Ranking,display six entries sorted by Work Location 1 (most),jobs,Work Location 1,"df.sort_values(by='Work Location 1', ascending=False).head(6)"
+Sorting & Ranking,order jobs based on Salary Frequency (ascending),jobs,Salary Frequency,"df.sort_values(by='Salary Frequency', ascending=True)"
+Sorting & Ranking,show top three jobs by Full-Time/Part-Time indicator,jobs,Full-Time/Part-Time indicator,"df.sort_values(by='Full-Time/Part-Time indicator', ascending=False).head(3)"
+Sorting & Ranking,twenty job postings with ascending Work Location 1,jobs,Work Location 1,"df.sort_values(by='Work Location 1', ascending=True).head(20)"
+Sorting & Ranking,sort jobs by Salary Frequency in increasing order,jobs,Salary Frequency,"df.sort_values(by='Salary Frequency', ascending=True)"
+Sorting & Ranking,show top forty jobs by Salary Frequency,jobs,Salary Frequency,"df.sort_values(by='Salary Frequency', ascending=False).head(40)"
+Sorting & Ranking,order jobs based on Salary Range To (least),jobs,Salary Range To,"df.sort_values(by='Salary Range To', ascending=True)"
+Sorting & Ranking,arrange job entries according to descending Job Category,jobs,Job Category,"df.sort_values(by='Job Category', ascending=False)"
+Sorting & Ranking,sort jobs by Salary Range To in least order,jobs,Salary Range To,"df.sort_values(by='Salary Range To', ascending=True)"
+Sorting & Ranking,show top twenty jobs by Job Description,jobs,Job Description,"df.sort_values(by='Job Description', ascending=False).head(20)"
 Text/String Operations,Get rows where email field has the substring 'Manager'.,email,,"df[df['email'].str.contains('Manager', case=False, na=False)]"
 Text/String Operations,Find all values in city that end with 'com'.,city,,"df[df['city'].str.endswith('com', na=False)]"
 Text/String Operations,List all records where product_name includes 'tech'.,product_name,,"df[df['product_name'].str.contains('tech', case=False, na=False)]"
@@ -299,3 +685,323 @@ Text/String Operations,Get rows where department starts with 'New'.,department,,
 Text/String Operations,Get rows where department field has the substring 'tech'.,department,,"df[df['department'].str.contains('tech', case=False, na=False)]"
 Text/String Operations,List records where department begins with 'tech'.,department,,"df[df['department'].str.startswith('tech', na=False)]"
 Text/String Operations,Find all entries with email matching 'Service' exactly.,email,,df[df['email'] == 'Service']
+Text/String Operations,find company_name ending in Sales,company_name,,"df[df['company_name'].str.endswith('sales', na=False)]"
+Text/String Operations,find email ending in salez,email,,"df[df['email'].str.endswith('sales', na=False)]"
+Text/String Operations,department has 'managr' in it,department,,"df[df['department'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,product_name has word salez,product_name,,"df[df['product_name'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,city has 'Manager' in it,city,,"df[df['city'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,get records with product_name beginning as Tech,product_name,,"df[df['product_name'].str.startswith('tech', na=False)]"
+Text/String Operations,get values with product_name trailing with dotcom,product_name,,"df[df['product_name'].str.endswith('.com', na=False)]"
+Text/String Operations,find rows where email includes 'Manager',email,,"df[df['email'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,email has word mngr,email,,"df[df['email'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,get records with job_title beginning as mngr,job_title,,"df[df['job_title'].str.startswith('manager', na=False)]"
+Text/String Operations,show rows where city starts with dotcom,city,,"df[df['city'].str.startswith('.com', na=False)]"
+Text/String Operations,product_name field holds value support,product_name,,"df[df['product_name'].str.contains('support', case=False, na=False)]"
+Text/String Operations,city has word hiringg,city,,"df[df['city'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,find email ending in dotcom,email,,"df[df['email'].str.endswith('.com', na=False)]"
+Text/String Operations,get values with product_name trailing with Pro,product_name,,"df[df['product_name'].str.endswith('pro', na=False)]"
+Text/String Operations,get values with job_title trailing with inc.,job_title,,"df[df['job_title'].str.endswith('inc', na=False)]"
+Text/String Operations,find rows where email includes 'manager',email,,"df[df['email'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,get records with job_title beginning as pro,job_title,,"df[df['job_title'].str.startswith('pro', na=False)]"
+Text/String Operations,find product_name ending in Manager,product_name,,"df[df['product_name'].str.endswith('manager', na=False)]"
+Text/String Operations,find department ending in support,department,,"df[df['department'].str.endswith('support', na=False)]"
+Text/String Operations,list where department ends with INC,department,,"df[df['department'].str.endswith('inc', na=False)]"
+Text/String Operations,show rows where city starts with sup,city,,"df[df['city'].str.startswith('support', na=False)]"
+Text/String Operations,job_title has word managr,job_title,,"df[df['job_title'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,list where city ends with hiringg,city,,"df[df['city'].str.endswith('hiring', na=False)]"
+Text/String Operations,department field begins with dotcom,department,,"df[df['department'].str.startswith('.com', na=False)]"
+Text/String Operations,find city ending in Manager,city,,"df[df['city'].str.endswith('manager', na=False)]"
+Text/String Operations,job_title field begins with Pro,job_title,,"df[df['job_title'].str.startswith('pro', na=False)]"
+Text/String Operations,find department ending in managr,department,,"df[df['department'].str.endswith('manager', na=False)]"
+Text/String Operations,get values with email trailing with manager,email,,"df[df['email'].str.endswith('manager', na=False)]"
+Text/String Operations,list where company_name ends with .COM,company_name,,"df[df['company_name'].str.endswith('.com', na=False)]"
+Text/String Operations,find rows where city includes 'Sales',city,,"df[df['city'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,find city ending in support,city,,"df[df['city'].str.endswith('support', na=False)]"
+Text/String Operations,list where department ends with Hiring,department,,"df[df['department'].str.endswith('hiring', na=False)]"
+Text/String Operations,show all department with tech in it,department,,"df[df['department'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,find rows where product_name includes 'TECH',product_name,,"df[df['product_name'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,job_title has 'mngr' in it,job_title,,"df[df['job_title'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,product_name has word INC,product_name,,"df[df['product_name'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,show rows where email starts with sales,email,,"df[df['email'].str.startswith('sales', na=False)]"
+Text/String Operations,get records with product_name beginning as TECH,product_name,,"df[df['product_name'].str.startswith('tech', na=False)]"
+Text/String Operations,find department ending in Manager,department,,"df[df['department'].str.endswith('manager', na=False)]"
+Text/String Operations,get records with email beginning as Support,email,,"df[df['email'].str.startswith('support', na=False)]"
+Text/String Operations,job_title has 'hire' in it,job_title,,"df[df['job_title'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,company_name field holds value Sales,company_name,,"df[df['company_name'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,show rows where department starts with pro,department,,"df[df['department'].str.startswith('pro', na=False)]"
+Text/String Operations,department has word inc.,department,,"df[df['department'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,show rows where email starts with INC,email,,"df[df['email'].str.startswith('inc', na=False)]"
+Text/String Operations,get values with product_name trailing with dotcom,product_name,,"df[df['product_name'].str.endswith('.com', na=False)]"
+Text/String Operations,find product_name ending in Support,product_name,,"df[df['product_name'].str.endswith('support', na=False)]"
+Text/String Operations,product_name field begins with TECH,product_name,,"df[df['product_name'].str.startswith('tech', na=False)]"
+Text/String Operations,get entries if department contains .com,department,,"df[df['department'].str.contains('.com', case=False, na=False)]"
+Text/String Operations,get rows where product_name does not contain 'suport',product_name,,"df[~df['product_name'].str.contains('suport', case=False, na=False)]"
+Text/String Operations,get rows where company_name does not contain '.COM',company_name,,"df[~df['company_name'].str.contains('.COM', case=False, na=False)]"
+Text/String Operations,find email having 'tech' and company_name with 'hiringg',email,,"df[df['email'].str.contains('tech', case=False, na=False) & df['company_name'].str.contains('hiringg', case=False, na=False)]"
+Text/String Operations,get rows where product_name does not contain 'tek',product_name,,"df[~df['product_name'].str.contains('tek', case=False, na=False)]"
+Text/String Operations,find department having 'support' and job_title with 'inc.',department,,"df[df['department'].str.contains('support', case=False, na=False) & df['job_title'].str.contains('inc.', case=False, na=False)]"
+Text/String Operations,get rows where company_name does not contain 'hiring',company_name,,"df[~df['company_name'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,find company_name having 'salez' and product_name with 'managr',company_name,,"df[df['company_name'].str.contains('salez', case=False, na=False) & df['product_name'].str.contains('managr', case=False, na=False)]"
+Text/String Operations,find department having 'salez' and email with 'sales',department,,"df[df['department'].str.contains('salez', case=False, na=False) & df['email'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,get rows where product_name does not contain 'Sales',product_name,,"df[~df['product_name'].str.contains('Sales', case=False, na=False)]"
+Text/String Operations,get rows where email does not contain 'support',email,,"df[~df['email'].str.contains('support', case=False, na=False)]"
+Text/String Operations,list records where department has 'dotcom' or company_name has 'dotcom',department,,"df[df['department'].str.contains('dotcom', case=False, na=False) | df['company_name'].str.contains('dotcom', case=False, na=False)]"
+Text/String Operations,get rows where department does not contain 'inc.',department,,"df[~df['department'].str.contains('inc.', case=False, na=False)]"
+Text/String Operations,find job_title having 'managr' and city with '.com',job_title,,"df[df['job_title'].str.contains('managr', case=False, na=False) & df['city'].str.contains('.com', case=False, na=False)]"
+Text/String Operations,get rows where department does not contain 'tek',department,,"df[~df['department'].str.contains('tek', case=False, na=False)]"
+Text/String Operations,get rows where department does not contain 'hiring',department,,"df[~df['department'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,get rows where product_name does not contain 'PRo',product_name,,"df[~df['product_name'].str.contains('PRo', case=False, na=False)]"
+Text/String Operations,find city having 'dotcom' and product_name with 'pr0',city,,"df[df['city'].str.contains('dotcom', case=False, na=False) & df['product_name'].str.contains('pr0', case=False, na=False)]"
+Text/String Operations,list records where product_name has 'Tech' or job_title has 'PRo',product_name,,"df[df['product_name'].str.contains('Tech', case=False, na=False) | df['job_title'].str.contains('PRo', case=False, na=False)]"
+Text/String Operations,list records where department has '.com' or job_title has 'hiring',department,,"df[df['department'].str.contains('.com', case=False, na=False) | df['job_title'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,list records where job_title has 'sup' or product_name has '.com',job_title,,"df[df['job_title'].str.contains('sup', case=False, na=False) | df['product_name'].str.contains('.com', case=False, na=False)]"
+Text/String Operations,list records where product_name has 'support' or job_title has 'Sales',product_name,,"df[df['product_name'].str.contains('support', case=False, na=False) | df['job_title'].str.contains('Sales', case=False, na=False)]"
+Text/String Operations,find email having 'salez' and job_title with 'dotcom',email,,"df[df['email'].str.contains('salez', case=False, na=False) & df['job_title'].str.contains('dotcom', case=False, na=False)]"
+Text/String Operations,find job_title having 'mngr' and company_name with 'hiringg',job_title,,"df[df['job_title'].str.contains('mngr', case=False, na=False) & df['company_name'].str.contains('hiringg', case=False, na=False)]"
+Text/String Operations,list records where job_title has 'sales' or product_name has 'ink',job_title,,"df[df['job_title'].str.contains('sales', case=False, na=False) | df['product_name'].str.contains('ink', case=False, na=False)]"
+Text/String Operations,list records where job_title has '.COM' or email has 'pro',job_title,,"df[df['job_title'].str.contains('.COM', case=False, na=False) | df['email'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,list entries where Salary Range To has 'inc' in it,Salary Range To,,"df[df['Salary Range To'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,show rows where Civil Service Title finishes with salez,Civil Service Title,,"df[df['Civil Service Title'].str.endswith('sales', na=False)]"
+Text/String Operations,show records where Level begins with INC,Level,,"df[df['Level'].str.startswith('inc', na=False)]"
+Text/String Operations,show records where Additional Information begins with sells,Additional Information,,"df[df['Additional Information'].str.startswith('sales', na=False)]"
+Text/String Operations,Salary Range To contains value sales,Salary Range To,,"df[df['Salary Range To'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,find all where Job Description contains 'hire',Job Description,,"df[df['Job Description'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,list entries where Salary Range From has '.com' in it,Salary Range From,,"df[df['Salary Range From'].str.contains('.com', case=False, na=False)]"
+Text/String Operations,find all where Civil Service Title contains 'Tech',Civil Service Title,,"df[df['Civil Service Title'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,show records where Work Location 1 begins with ink,Work Location 1,,"df[df['Work Location 1'].str.startswith('inc', na=False)]"
+Text/String Operations,Level starts with 'support',Level,,"df[df['Level'].str.startswith('support', na=False)]"
+Text/String Operations,Posting Updated ends with 'Support',Posting Updated,,"df[df['Posting Updated'].str.endswith('support', na=False)]"
+Text/String Operations,Additional Information starts with 'managr',Additional Information,,"df[df['Additional Information'].str.startswith('manager', na=False)]"
+Text/String Operations,show records where Residency Requirement begins with sup,Residency Requirement,,"df[df['Residency Requirement'].str.startswith('support', na=False)]"
+Text/String Operations,show records where Residency Requirement begins with sells,Residency Requirement,,"df[df['Residency Requirement'].str.startswith('sales', na=False)]"
+Text/String Operations,Additional Information ends with 'Sales',Additional Information,,"df[df['Additional Information'].str.endswith('sales', na=False)]"
+Text/String Operations,Additional Information includes 'Pro',Additional Information,,"df[df['Additional Information'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,list entries where Hours/Shift has 'pr0' in it,Hours/Shift,,"df[df['Hours/Shift'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,show records where Level begins with Manager,Level,,"df[df['Level'].str.startswith('manager', na=False)]"
+Text/String Operations,show rows where Posting Date finishes with pro,Posting Date,,"df[df['Posting Date'].str.endswith('pro', na=False)]"
+Text/String Operations,Minimum Qual Requirements includes 'INC',Minimum Qual Requirements,,"df[df['Minimum Qual Requirements'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,Career Level includes 'pr0',Career Level,,"df[df['Career Level'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,Process Date starts with 'Tech',Process Date,,"df[df['Process Date'].str.startswith('tech', na=False)]"
+Text/String Operations,Hours/Shift ends with 'dotcom',Hours/Shift,,"df[df['Hours/Shift'].str.endswith('.com', na=False)]"
+Text/String Operations,show records where Level begins with Pro,Level,,"df[df['Level'].str.startswith('pro', na=False)]"
+Text/String Operations,Process Date ends with 'Hiring',Process Date,,"df[df['Process Date'].str.endswith('hiring', na=False)]"
+Text/String Operations,show rows where Career Level finishes with inc.,Career Level,,"df[df['Career Level'].str.endswith('inc', na=False)]"
+Text/String Operations,find all where Minimum Qual Requirements contains 'TECH',Minimum Qual Requirements,,"df[df['Minimum Qual Requirements'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,Full-Time/Part-Time indicator starts with 'ink',Full-Time/Part-Time indicator,,"df[df['Full-Time/Part-Time indicator'].str.startswith('inc', na=False)]"
+Text/String Operations,Job Description starts with 'dotcom',Job Description,,"df[df['Job Description'].str.startswith('.com', na=False)]"
+Text/String Operations,Post Until ends with 'sales',Post Until,,"df[df['Post Until'].str.endswith('sales', na=False)]"
+Text/String Operations,Title Classification starts with 'managr',Title Classification,,"df[df['Title Classification'].str.startswith('manager', na=False)]"
+Text/String Operations,show rows where Post Until finishes with Support,Post Until,,"df[df['Post Until'].str.endswith('support', na=False)]"
+Text/String Operations,Hours/Shift ends with 'hiringg',Hours/Shift,,"df[df['Hours/Shift'].str.endswith('hiring', na=False)]"
+Text/String Operations,Level contains value pro,Level,,"df[df['Level'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,Salary Frequency ends with '.COM',Salary Frequency,,"df[df['Salary Frequency'].str.endswith('.com', na=False)]"
+Text/String Operations,Title Classification includes 'inc.',Title Classification,,"df[df['Title Classification'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,Work Location 1 ends with 'hiring',Work Location 1,,"df[df['Work Location 1'].str.endswith('hiring', na=False)]"
+Text/String Operations,Level ends with 'Tech',Level,,"df[df['Level'].str.endswith('tech', na=False)]"
+Text/String Operations,Division/Work Unit starts with 'sells',Division/Work Unit,,"df[df['Division/Work Unit'].str.startswith('sales', na=False)]"
+Text/String Operations,Posting Updated ends with 'TECH',Posting Updated,,"df[df['Posting Updated'].str.endswith('tech', na=False)]"
+Text/String Operations,find company_name ending in Sales,company_name,,"df[df['company_name'].str.endswith('sales', na=False)]"
+Text/String Operations,find email ending in salez,email,,"df[df['email'].str.endswith('sales', na=False)]"
+Text/String Operations,department has 'managr' in it,department,,"df[df['department'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,product_name has word salez,product_name,,"df[df['product_name'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,city has 'Manager' in it,city,,"df[df['city'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,get records with product_name beginning as Tech,product_name,,"df[df['product_name'].str.startswith('tech', na=False)]"
+Text/String Operations,get values with product_name trailing with dotcom,product_name,,"df[df['product_name'].str.endswith('.com', na=False)]"
+Text/String Operations,find rows where email includes 'Manager',email,,"df[df['email'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,email has word mngr,email,,"df[df['email'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,get records with job_title beginning as mngr,job_title,,"df[df['job_title'].str.startswith('manager', na=False)]"
+Text/String Operations,show rows where city starts with dotcom,city,,"df[df['city'].str.startswith('.com', na=False)]"
+Text/String Operations,product_name field holds value support,product_name,,"df[df['product_name'].str.contains('support', case=False, na=False)]"
+Text/String Operations,city has word hiringg,city,,"df[df['city'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,find email ending in dotcom,email,,"df[df['email'].str.endswith('.com', na=False)]"
+Text/String Operations,get values with product_name trailing with Pro,product_name,,"df[df['product_name'].str.endswith('pro', na=False)]"
+Text/String Operations,get values with job_title trailing with inc.,job_title,,"df[df['job_title'].str.endswith('inc', na=False)]"
+Text/String Operations,find rows where email includes 'manager',email,,"df[df['email'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,get records with job_title beginning as pro,job_title,,"df[df['job_title'].str.startswith('pro', na=False)]"
+Text/String Operations,find product_name ending in Manager,product_name,,"df[df['product_name'].str.endswith('manager', na=False)]"
+Text/String Operations,find department ending in support,department,,"df[df['department'].str.endswith('support', na=False)]"
+Text/String Operations,list where department ends with INC,department,,"df[df['department'].str.endswith('inc', na=False)]"
+Text/String Operations,show rows where city starts with sup,city,,"df[df['city'].str.startswith('support', na=False)]"
+Text/String Operations,job_title has word managr,job_title,,"df[df['job_title'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,list where city ends with hiringg,city,,"df[df['city'].str.endswith('hiring', na=False)]"
+Text/String Operations,department field begins with dotcom,department,,"df[df['department'].str.startswith('.com', na=False)]"
+Text/String Operations,find city ending in Manager,city,,"df[df['city'].str.endswith('manager', na=False)]"
+Text/String Operations,job_title field begins with Pro,job_title,,"df[df['job_title'].str.startswith('pro', na=False)]"
+Text/String Operations,find department ending in managr,department,,"df[df['department'].str.endswith('manager', na=False)]"
+Text/String Operations,get values with email trailing with manager,email,,"df[df['email'].str.endswith('manager', na=False)]"
+Text/String Operations,list where company_name ends with .COM,company_name,,"df[df['company_name'].str.endswith('.com', na=False)]"
+Text/String Operations,find rows where city includes 'Sales',city,,"df[df['city'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,find city ending in support,city,,"df[df['city'].str.endswith('support', na=False)]"
+Text/String Operations,list where department ends with Hiring,department,,"df[df['department'].str.endswith('hiring', na=False)]"
+Text/String Operations,show all department with tech in it,department,,"df[df['department'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,find rows where product_name includes 'TECH',product_name,,"df[df['product_name'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,job_title has 'mngr' in it,job_title,,"df[df['job_title'].str.contains('manager', case=False, na=False)]"
+Text/String Operations,product_name has word INC,product_name,,"df[df['product_name'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,show rows where email starts with sales,email,,"df[df['email'].str.startswith('sales', na=False)]"
+Text/String Operations,get records with product_name beginning as TECH,product_name,,"df[df['product_name'].str.startswith('tech', na=False)]"
+Text/String Operations,find department ending in Manager,department,,"df[df['department'].str.endswith('manager', na=False)]"
+Text/String Operations,get records with email beginning as Support,email,,"df[df['email'].str.startswith('support', na=False)]"
+Text/String Operations,job_title has 'hire' in it,job_title,,"df[df['job_title'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,company_name field holds value Sales,company_name,,"df[df['company_name'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,show rows where department starts with pro,department,,"df[df['department'].str.startswith('pro', na=False)]"
+Text/String Operations,department has word inc.,department,,"df[df['department'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,show rows where email starts with INC,email,,"df[df['email'].str.startswith('inc', na=False)]"
+Text/String Operations,get values with product_name trailing with dotcom,product_name,,"df[df['product_name'].str.endswith('.com', na=False)]"
+Text/String Operations,find product_name ending in Support,product_name,,"df[df['product_name'].str.endswith('support', na=False)]"
+Text/String Operations,product_name field begins with TECH,product_name,,"df[df['product_name'].str.startswith('tech', na=False)]"
+Text/String Operations,get entries if department contains .com,department,,"df[df['department'].str.contains('.com', case=False, na=False)]"
+Text/String Operations,get rows where product_name does not contain 'suport',product_name,,"df[~df['product_name'].str.contains('suport', case=False, na=False)]"
+Text/String Operations,get rows where company_name does not contain '.COM',company_name,,"df[~df['company_name'].str.contains('.COM', case=False, na=False)]"
+Text/String Operations,find email having 'tech' and company_name with 'hiringg',email,company_name,"df[df['email'].str.contains('tech', case=False, na=False) & df['company_name'].str.contains('hiringg', case=False, na=False)]"
+Text/String Operations,get rows where product_name does not contain 'tek',product_name,,"df[~df['product_name'].str.contains('tek', case=False, na=False)]"
+Text/String Operations,find department having 'support' and job_title with 'inc.',department,job_title,"df[df['department'].str.contains('support', case=False, na=False) & df['job_title'].str.contains('inc.', case=False, na=False)]"
+Text/String Operations,get rows where company_name does not contain 'hiring',company_name,,"df[~df['company_name'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,find company_name having 'salez' and product_name with 'managr',company_name,product_name,"df[df['company_name'].str.contains('salez', case=False, na=False) & df['product_name'].str.contains('managr', case=False, na=False)]"
+Text/String Operations,find department having 'salez' and email with 'sales',department,email,"df[df['department'].str.contains('salez', case=False, na=False) & df['email'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,get rows where product_name does not contain 'Sales',product_name,,"df[~df['product_name'].str.contains('Sales', case=False, na=False)]"
+Text/String Operations,get rows where email does not contain 'support',email,,"df[~df['email'].str.contains('support', case=False, na=False)]"
+Text/String Operations,list records where department has 'dotcom' or company_name has 'dotcom',department,company_name,"df[df['department'].str.contains('dotcom', case=False, na=False) | df['company_name'].str.contains('dotcom', case=False, na=False)]"
+Text/String Operations,get rows where department does not contain 'inc.',department,,"df[~df['department'].str.contains('inc.', case=False, na=False)]"
+Text/String Operations,find job_title having 'managr' and city with '.com',job_title,city,"df[df['job_title'].str.contains('managr', case=False, na=False) & df['city'].str.contains('.com', case=False, na=False)]"
+Text/String Operations,get rows where department does not contain 'tek',department,,"df[~df['department'].str.contains('tek', case=False, na=False)]"
+Text/String Operations,get rows where department does not contain 'hiring',department,,"df[~df['department'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,get rows where product_name does not contain 'PRo',product_name,,"df[~df['product_name'].str.contains('PRo', case=False, na=False)]"
+Text/String Operations,find city having 'dotcom' and product_name with 'pr0',city,product_name,"df[df['city'].str.contains('dotcom', case=False, na=False) & df['product_name'].str.contains('pr0', case=False, na=False)]"
+Text/String Operations,list records where product_name has 'Tech' or job_title has 'PRo',product_name,job_title,"df[df['product_name'].str.contains('Tech', case=False, na=False) | df['job_title'].str.contains('PRo', case=False, na=False)]"
+Text/String Operations,list records where department has '.com' or job_title has 'hiring',department,job_title,"df[df['department'].str.contains('.com', case=False, na=False) | df['job_title'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,list records where job_title has 'sup' or product_name has '.com',job_title,product_name,"df[df['job_title'].str.contains('sup', case=False, na=False) | df['product_name'].str.contains('.com', case=False, na=False)]"
+Text/String Operations,list records where product_name has 'support' or job_title has 'Sales',product_name,job_title,"df[df['product_name'].str.contains('support', case=False, na=False) | df['job_title'].str.contains('Sales', case=False, na=False)]"
+Text/String Operations,find email having 'salez' and job_title with 'dotcom',email,job_title,"df[df['email'].str.contains('salez', case=False, na=False) & df['job_title'].str.contains('dotcom', case=False, na=False)]"
+Text/String Operations,find job_title having 'mngr' and company_name with 'hiringg',job_title,company_name,"df[df['job_title'].str.contains('mngr', case=False, na=False) & df['company_name'].str.contains('hiringg', case=False, na=False)]"
+Text/String Operations,list records where job_title has 'sales' or product_name has 'ink',job_title,product_name,"df[df['job_title'].str.contains('sales', case=False, na=False) | df['product_name'].str.contains('ink', case=False, na=False)]"
+Text/String Operations,list records where job_title has '.COM' or email has 'pro',job_title,email,"df[df['job_title'].str.contains('.COM', case=False, na=False) | df['email'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,list entries where Salary Range To has 'inc' in it,Salary Range To,,"df[df['Salary Range To'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,show rows where Civil Service Title finishes with salez,Civil Service Title,,"df[df['Civil Service Title'].str.endswith('sales', na=False)]"
+Text/String Operations,show records where Level begins with INC,Level,,"df[df['Level'].str.startswith('inc', na=False)]"
+Text/String Operations,show records where Additional Information begins with sells,Additional Information,,"df[df['Additional Information'].str.startswith('sales', na=False)]"
+Text/String Operations,Salary Range To contains value sales,Salary Range To,,"df[df['Salary Range To'].str.contains('sales', case=False, na=False)]"
+Text/String Operations,find all where Job Description contains 'hire',Job Description,,"df[df['Job Description'].str.contains('hiring', case=False, na=False)]"
+Text/String Operations,list entries where Salary Range From has '.com' in it,Salary Range From,,"df[df['Salary Range From'].str.contains('.com', case=False, na=False)]"
+Text/String Operations,find all where Civil Service Title contains 'Tech',Civil Service Title,,"df[df['Civil Service Title'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,show records where Work Location 1 begins with ink,Work Location 1,,"df[df['Work Location 1'].str.startswith('inc', na=False)]"
+Text/String Operations,Level starts with 'support',Level,,"df[df['Level'].str.startswith('support', na=False)]"
+Text/String Operations,Posting Updated ends with 'Support',Posting Updated,,"df[df['Posting Updated'].str.endswith('support', na=False)]"
+Text/String Operations,Additional Information starts with 'managr',Additional Information,,"df[df['Additional Information'].str.startswith('manager', na=False)]"
+Text/String Operations,show records where Residency Requirement begins with sup,Residency Requirement,,"df[df['Residency Requirement'].str.startswith('support', na=False)]"
+Text/String Operations,show records where Residency Requirement begins with sells,Residency Requirement,,"df[df['Residency Requirement'].str.startswith('sales', na=False)]"
+Text/String Operations,Additional Information ends with 'Sales',Additional Information,,"df[df['Additional Information'].str.endswith('sales', na=False)]"
+Text/String Operations,Additional Information includes 'Pro',Additional Information,,"df[df['Additional Information'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,list entries where Hours/Shift has 'pr0' in it,Hours/Shift,,"df[df['Hours/Shift'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,show records where Level begins with Manager,Level,,"df[df['Level'].str.startswith('manager', na=False)]"
+Text/String Operations,show rows where Posting Date finishes with pro,Posting Date,,"df[df['Posting Date'].str.endswith('pro', na=False)]"
+Text/String Operations,Minimum Qual Requirements includes 'INC',Minimum Qual Requirements,,"df[df['Minimum Qual Requirements'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,Career Level includes 'pr0',Career Level,,"df[df['Career Level'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,Process Date starts with 'Tech',Process Date,,"df[df['Process Date'].str.startswith('tech', na=False)]"
+Text/String Operations,Hours/Shift ends with 'dotcom',Hours/Shift,,"df[df['Hours/Shift'].str.endswith('.com', na=False)]"
+Text/String Operations,show records where Level begins with Pro,Level,,"df[df['Level'].str.startswith('pro', na=False)]"
+Text/String Operations,Process Date ends with 'Hiring',Process Date,,"df[df['Process Date'].str.endswith('hiring', na=False)]"
+Text/String Operations,show rows where Career Level finishes with inc.,Career Level,,"df[df['Career Level'].str.endswith('inc', na=False)]"
+Text/String Operations,find all where Minimum Qual Requirements contains 'TECH',Minimum Qual Requirements,,"df[df['Minimum Qual Requirements'].str.contains('tech', case=False, na=False)]"
+Text/String Operations,Full-Time/Part-Time indicator starts with 'ink',Full-Time/Part-Time indicator,,"df[df['Full-Time/Part-Time indicator'].str.startswith('inc', na=False)]"
+Text/String Operations,Job Description starts with 'dotcom',Job Description,,"df[df['Job Description'].str.startswith('.com', na=False)]"
+Text/String Operations,Post Until ends with 'sales',Post Until,,"df[df['Post Until'].str.endswith('sales', na=False)]"
+Text/String Operations,Title Classification starts with 'managr',Title Classification,,"df[df['Title Classification'].str.startswith('manager', na=False)]"
+Text/String Operations,show rows where Post Until finishes with Support,Post Until,,"df[df['Post Until'].str.endswith('support', na=False)]"
+Text/String Operations,Hours/Shift ends with 'hiringg',Hours/Shift,,"df[df['Hours/Shift'].str.endswith('hiring', na=False)]"
+Text/String Operations,Level contains value pro,Level,,"df[df['Level'].str.contains('pro', case=False, na=False)]"
+Text/String Operations,Salary Frequency ends with '.COM',Salary Frequency,,"df[df['Salary Frequency'].str.endswith('.com', na=False)]"
+Text/String Operations,Title Classification includes 'inc.',Title Classification,,"df[df['Title Classification'].str.contains('inc', case=False, na=False)]"
+Text/String Operations,Work Location 1 ends with 'hiring',Work Location 1,,"df[df['Work Location 1'].str.endswith('hiring', na=False)]"
+Text/String Operations,Level ends with 'Tech',Level,,"df[df['Level'].str.endswith('tech', na=False)]"
+Text/String Operations,Division/Work Unit starts with 'sells',Division/Work Unit,,"df[df['Division/Work Unit'].str.startswith('sales', na=False)]"
+Text/String Operations,Posting Updated ends with 'TECH',Posting Updated,,"df[df['Posting Updated'].str.endswith('tech', na=False)]"
+Text/String Operations,list all jobs with Salary Range From minimum 50000,Salary Range From,,df[df['Salary Range From'] >= 50000]
+Text/String Operations,Level != 100000,Level,,df[df['Level'] != 100000]
+Text/String Operations,Salary Range To should be below 30000,Salary Range To,,df[df['Salary Range To'] < 30000]
+Text/String Operations,Salary Range From should be maximum 200000,Salary Range From,,df[df['Salary Range From'] <= 200000]
+Text/String Operations,show records where Salary Range From is below 75000,Salary Range From,,df[df['Salary Range From'] < 75000]
+Text/String Operations,list all jobs with Salary Range To maximum 75000,Salary Range To,,df[df['Salary Range To'] <= 75000]
+Text/String Operations,get jobs where Level is greater than 150000,Level,,df[df['Level'] > 150000]
+Text/String Operations,show records where Level is >= 50000,Level,,df[df['Level'] >= 50000]
+Text/String Operations,Salary Range To should be maximum 150000,Salary Range To,,df[df['Salary Range To'] <= 150000]
+Text/String Operations,show records where Level is more than 30000,Level,,df[df['Level'] > 30000]
+Text/String Operations,get jobs where Level is != 50000,Level,,df[df['Level'] != 50000]
+Text/String Operations,Salary Range From should be == 75000,Salary Range From,,df[df['Salary Range From'] == 75000]
+Text/String Operations,show records where Level is maximum 75000,Level,,df[df['Level'] <= 75000]
+Text/String Operations,get jobs where Level is more than 30000,Level,,df[df['Level'] > 30000]
+Text/String Operations,Level <= 30000,Level,,df[df['Level'] <= 30000]
+Text/String Operations,list all jobs with Level not 200000,Level,,df[df['Level'] != 200000]
+Text/String Operations,get jobs where Salary Range From is under 100000,Salary Range From,,df[df['Salary Range From'] < 100000]
+Text/String Operations,Salary Range From should be under 75000,Salary Range From,,df[df['Salary Range From'] < 75000]
+Text/String Operations,list all jobs with Level equal to 100000,Level,,df[df['Level'] == 100000]
+Text/String Operations,Salary Range To should be not 30000,Salary Range To,,df[df['Salary Range To'] != 30000]
+Text/String Operations,show records where Level is more than 50000,Level,,df[df['Level'] > 50000]
+Text/String Operations,Salary Range To != 50000,Salary Range To,,df[df['Salary Range To'] != 50000]
+Text/String Operations,Salary Range From <= 75000,Salary Range From,,df[df['Salary Range From'] <= 75000]
+Text/String Operations,get jobs where Salary Range From is maximum 75000,Salary Range From,,df[df['Salary Range From'] <= 75000]
+Text/String Operations,get jobs where Level is >= 200000,Level,,df[df['Level'] >= 200000]
+Text/String Operations,Level minimum 50000,Level,,df[df['Level'] >= 50000]
+Text/String Operations,Salary Range To should be != 200000,Salary Range To,,df[df['Salary Range To'] != 200000]
+Text/String Operations,Salary Range To less than 200000,Salary Range To,,df[df['Salary Range To'] < 200000]
+Text/String Operations,show records where Salary Range To is under 30000,Salary Range To,,df[df['Salary Range To'] < 30000]
+Text/String Operations,show records where Level is at most 200000,Level,,df[df['Level'] <= 200000]
+Text/String Operations,get jobs where Salary Range To is <= 100000,Salary Range To,,df[df['Salary Range To'] <= 100000]
+Text/String Operations,list all jobs with Salary Range To maximum 150000,Salary Range To,,df[df['Salary Range To'] <= 150000]
+Text/String Operations,Salary Range From should be above 100000,Salary Range From,,df[df['Salary Range From'] > 100000]
+Text/String Operations,show records where Salary Range To is at most 30000,Salary Range To,,df[df['Salary Range To'] <= 30000]
+Text/String Operations,list all jobs with Level less than 30000,Level,,df[df['Level'] < 30000]
+Text/String Operations,show records where Salary Range From is equal to 30000,Salary Range From,,df[df['Salary Range From'] == 30000]
+Text/String Operations,get jobs where Salary Range From is minimum 50000,Salary Range From,,df[df['Salary Range From'] >= 50000]
+Text/String Operations,show records where Salary Range From is not 200000,Salary Range From,,df[df['Salary Range From'] != 200000]
+Text/String Operations,get jobs where Level is at most 100000,Level,,df[df['Level'] <= 100000]
+Text/String Operations,list all jobs with Salary Range From above 75000,Salary Range From,,df[df['Salary Range From'] > 75000]
+Text/String Operations,Salary Range From should be != 200000,Salary Range From,,df[df['Salary Range From'] != 200000]
+Text/String Operations,list all jobs with Level is 150000,Level,,df[df['Level'] == 150000]
+Text/String Operations,show records where Salary Range To is greater than 200000,Salary Range To,,df[df['Salary Range To'] > 200000]
+Text/String Operations,show records where Salary Range To is not equal to 150000,Salary Range To,,df[df['Salary Range To'] != 150000]
+Text/String Operations,list all jobs with Salary Range From >= 100000,Salary Range From,,df[df['Salary Range From'] >= 100000]
+Text/String Operations,list all jobs with Level not 75000,Level,,df[df['Level'] != 75000]
+Text/String Operations,show records where Level is greater than 200000,Level,,df[df['Level'] > 200000]
+Text/String Operations,Salary Range From maximum 100000,Salary Range From,,df[df['Salary Range From'] <= 100000]
+Text/String Operations,Salary Range To should be at least 75000,Salary Range To,,df[df['Salary Range To'] >= 75000]
+Text/String Operations,Salary Range To != 50000,Salary Range To,,df[df['Salary Range To'] != 50000]
+Text/String Operations,show records where Posting Date is not equal to 200000,Posting Date,,df[pd.to_datetime(df['Posting Date']) != pd.to_datetime('200000')]
+Text/String Operations,show entries having Sales >= 25000,Sales,,df[df['Sales'] >= 25000]
+Text/String Operations,show entries having discount is 150000,discount,,df[df['discount'] == 150000]
+Text/String Operations,units_sold <= 30000,units_sold,,df[df['units_sold'] <= 30000]
+Text/String Operations,revenue should be more than 30000,revenue,,df[df['revenue'] > 30000]
+Text/String Operations,show entries having discount below 200000,discount,,df[df['discount'] < 200000]
+Text/String Operations,Salary Range To >= 200000,Salary Range To,,df[df['Salary Range To'] >= 200000]
+Text/String Operations,Posting Date should be minimum 100000,Posting Date,,df[pd.to_datetime(df['Posting Date']) >= pd.to_datetime('100000')]
+Text/String Operations,units_sold should be >= 25000,units_sold,,df[df['units_sold'] >= 25000]
+Text/String Operations,Salary Range To not 150000,Salary Range To,,df[df['Salary Range To'] != 150000]
+Text/String Operations,revenue equal to 25000,revenue,,df[df['revenue'] == 25000]
+Text/String Operations,show entries having revenue not 99999,revenue,,df[df['revenue'] != 99999]
+Text/String Operations,get records where revenue is greater than 50000,revenue,,df[df['revenue'] > 50000]
+Text/String Operations,Salary Range To less than 30000,Salary Range To,,df[df['Salary Range To'] < 30000]
+Text/String Operations,Salary Range From under 25000,Salary Range From,,df[df['Salary Range From'] < 25000]
+Text/String Operations,Process Date should be <= 99999,Process Date,,df[pd.to_datetime(df['Process Date']) <= pd.to_datetime('99999')]
+Text/String Operations,show entries having Salary Range From equal to 1,Salary Range From,,df[df['Salary Range From'] == 1]
+Text/String Operations,revenue should be equal to 30000,revenue,,df[df['revenue'] == 30000]
+Text/String Operations,entries where Posting Updated is at most 25000,Posting Updated,,df[pd.to_datetime(df['Posting Updated']) <= pd.to_datetime('25000')]
+Text/String Operations,get records where Sales is greater than 100000,Sales,,df[df['Sales'] > 100000]
+Text/String Operations,get records where revenue is more than 100000,revenue,,df[df['revenue'] > 100000]
+Text/String Operations,list data with Posting Updated less than 10,Posting Updated,,df[pd.to_datetime(df['Posting Updated']) < pd.to_datetime('10')]
+Text/String Operations,list data with Posting Updated under 0,Posting Updated,,df[pd.to_datetime(df['Posting Updated']) < pd.to_datetime('0')]
+Text/String Operations,show records where Posting Updated is below 10,Posting Updated,,df[pd.to_datetime(df['Posting Updated']) < pd.to_datetime('10')]
+Text/String Operations,Post Until should be not 200000,Post Until,,df[pd.to_datetime(df['Post Until']) != pd.to_datetime('200000')]
+Text/String Operations,show records where Process Date is >= 150000,Process Date,,df[pd.to_datetime(df['Process Date']) >= pd.to_datetime('150000')]
+Text/String Operations,Sales below 10,Sales,,df[df['Sales'] < 10]
+Text/String Operations,Salary Range From greater than 200000,Salary Range From,,df[df['Salary Range From'] > 200000]
+Text/String Operations,get records where Salary Range From is == 25000,Salary Range From,,df[df['Salary Range From'] == 25000]
+Text/String Operations,units_sold should be is 30000,units_sold,,df[df['units_sold'] == 30000]
+Text/String Operations,Process Date should be greater than 30000,Process Date,,df[pd.to_datetime(df['Process Date']) > pd.to_datetime('30000')]
+Text/String Operations,show entries having discount at most 30000,discount,,df[df['discount'] <= 30000]
+Text/String Operations,show entries having units_sold at most 150000,units_sold,,df[df['units_sold'] <= 150000]
+Text/String Operations,Process Date should be under 9999,Process Date,,df[pd.to_datetime(df['Process Date']) < pd.to_datetime('9999')]
+Text/String Operations,show entries having discount at least 25000,discount,,df[df['discount'] >= 25000]
+Text/String Operations,Sales should be is 99999,Sales,,df[df['Sales'] == 99999]
+Text/String Operations,get records where revenue is at most 50000,revenue,,df[df['revenue'] <= 50000]
+Text/String Operations,revenue should be != 0,revenue,,df[df['revenue'] != 0]
+Text/String Operations,Sales should be below 9999,Sales,,df[df['Sales'] < 9999]
+Text/String Operations,get records where Sales is is 150000,Sales,,df[df['Sales'] == 150000]
