@@ -5,3 +5,4 @@ model/phi4-full-finetune/*
 model/phi4_cache/*
 gcp-service-account-key.json
 munshi-ai
+.idea
