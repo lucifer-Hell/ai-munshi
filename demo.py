@@ -1,14 +1,14 @@
 import gradio as gr
 import pandas as pd
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForSeq2SeqLM, T5ForConditionalGeneration
 import torch, json, re
 
 # === Load model
-model_path = "./munshi-ai"
+model_path = "./model/codet5p-finetuned"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
-model = AutoModelForCausalLM.from_pretrained(
+model = T5ForConditionalGeneration.from_pretrained(
     model_path, device_map="auto", torch_dtype="auto", trust_remote_code=True
-)
+).to("cpu")
 
 
 
@@ -21,35 +21,30 @@ def preview_csv(file):
         return pd.DataFrame([["❌ Error loading file:", str(e)]])
 
 
-# === Helper: Generate code from query
-def generate_code(prompt):
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-    with torch.no_grad():
-        output_ids = model.generate(
-            **inputs, max_new_tokens=150, temperature=0.7, top_p=0.9, do_sample=True
-        )
-    text = tokenizer.decode(output_ids[0], skip_special_tokens=False)
-    match = re.search(r"\{.*?\}", text, re.DOTALL)
-    if match:
-        try:
-            result = json.loads(match.group(0))
-            return result.get("df_code", ""), result
-        except:
-            return "", {"error": "Could not parse JSON"}
-    return "", {"error": "No JSON found"}
+# === CodeT5-friendly code generation ===
+def generate_code(query, max_new_tokens=128):
+    input_ids = tokenizer(query, return_tensors="pt", padding=True, truncation=True).input_ids.to(model.device)
 
-# === Main logic
-def handle_query(file, query):
-    df = pd.read_csv(file.name)
-    columns= df.columns
-    prompt = (
-        f"<|system|>\nYou are an expert Python assistant. Generate valid Pandas code based on the user's query.\n"
-        f"The DataFrame contains the following columns: {columns}\n<|end|>\n"
-        f"<|user|>\n{query}\n<|end|>\n<|assistant|>\n"
+    output_ids = model.generate(
+        input_ids,
+        max_new_tokens=max_new_tokens,
+        do_sample=False,  # deterministic
+        num_beams=5,  # better quality (optional)
+        early_stopping=True
     )
-    df_code, raw = generate_code(prompt)
+    generated_code = tokenizer.decode(output_ids[0], skip_special_tokens=True)
+    return generated_code, {"raw_output": generated_code}
 
-    print("df code ",df_code)
+# === Main query handler for CodeT5 ===
+def handle_query(file, query: str):
+    df = pd.read_csv(file.name, on_bad_lines="skip")
+    columns = list(df.columns)
+
+    # Construct prompt in CodeT5's expected "source" format
+    prompt = f"The DataFrame contains the following columns: {', '.join(columns)}.\nQuery: {query}"
+
+    df_code, raw = generate_code(prompt)
+    print("Generated Code:", df_code)
 
     if not df_code:
         return "❌ Could not generate code.", pd.DataFrame(), str(raw)
@@ -59,17 +54,16 @@ def handle_query(file, query):
         exec(f"result = {df_code}", {}, local_env)
         result_df = local_env.get("result", None)
 
-        # Fallback to df if result is missing or not a DataFrame/Series
         if not isinstance(result_df, (pd.DataFrame, pd.Series)):
             result_df = local_env.get("df", pd.DataFrame())
 
-        # If it's a Series, convert to DataFrame
         if isinstance(result_df, pd.Series):
             result_df = result_df.to_frame()
 
         return f"✅ Code: {df_code}", result_df, str(raw)
     except Exception as e:
         return f"⚠️ Code Error: {e}", pd.DataFrame(), str(raw)
+
 
 
 # === Interface
